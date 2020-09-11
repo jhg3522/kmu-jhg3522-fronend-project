@@ -2,5 +2,8 @@ body{margin: 0; max-width: 1860px; min-width: 1024px;}
 header {display: flex; flex-direction: row; justify-content: space-between; background: greenyellow; height: 65px;}
 main{display: flex; height: 701px; flex-direction: row; background: brown;  }
 aside{display: flex; flex-direction: column; max-width: 250px; min-width: 200px; height: auto; background: black; color: white;}
-section{display: flex; flex-direction: column; background: yellow; flex : 1;}
+section{display: flex; flex-direction: column; justify-content: space-between; background: yellow; flex : 1;}
 footer{height: 70px; background: gray;}
+aside .my-info {height: 20%;background: gray;}
+aside .menu {display: flex; flex-direction: column; justify-content: space-between;}
+section .menu-image {height: 30%; background: skyblue;}
