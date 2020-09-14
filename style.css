@@ -1,0 +1,44 @@
+body{margin: 0; width: 1440px; background: #F3F9FF; height: 1554px;}
+body .banner-img{max-width: 1440px; min-width: 1024px; height: 375px; border-radius: 2px; background-image: url("/assets/images/banner.jpg"); background-size: cover; background-position: center; box-shadow: 0 0 3px 0 black; margin-bottom: 20px;}
+header { height: 60px; background:#6F7691;}
+header .header-wrap{margin: 0 208px;display: flex; flex-direction: row; justify-content: space-between; }
+header .logo{color: white; padding: 8px; font-size: 36px; line-height: 42px;}
+header .member-menu{padding: 13px; font-size: 24px; line-height: 28px;}
+main{display: flex; height: 1000px; flex-direction: row; justify-content: space-between; margin: 0 208px;}
+section{display: flex; flex-direction: column; justify-content: space-between; background: #F3F9FF;}
+section .menu-image {height: 312px; width: 680px; margin-left: 21px; background: #C4C4C4; border-radius: 10px; }
+section .menu-image h3{font-size: 24px; line-height: 28px; color: #000000;margin:11px;}
+section .menu-image .img-wrap{display: grid; grid-template-columns: repeat(3,1fr); margin-left: 18px;}
+section .menu-image .img-wrap .img{width: 200px; height:200px;  transform: scale(1); transition: all 0.3s ease-in-out; box-shadow: 0 0 6px 0 black;}
+section .menu-image .img-wrap .img:hover{transform: scale(1.1);}
+section .menu-image .img-wrap .img1{background-image: url("/assets/images/KakaoTalk_20200914_182659266_02.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;}
+section .menu-image .img-wrap .img2{background-image: url("/assets/images/KakaoTalk_20200914_182659266_15.png"); background-repeat: no-repeat; background-size: cover; border-radius: 10px; background-position: center;}
+section .menu-image .img-wrap .img3{background-image: url("/assets/images/KakaoTalk_20200914_182659266_04.png"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+section .menu-image .img-wrap .img4{background-image: url("/assets/images/KakaoTalk_20200914_182659266_19.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+section .menu-image .img-wrap .img5{background-image: url("/assets/images/KakaoTalk_20200914_182659266_06.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+section .menu-image .img-wrap .img6{background-image: url("/assets/images/KakaoTalk_20200914_182659266_07.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+section .menu-image .img-wrap .img7{background-image: url("/assets/images/KakaoTalk_20200914_182659266.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+section .menu-image .img-wrap .img8{background-image: url("/assets/images/KakaoTalk_20200914_182659266_14.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+section .menu-image .img-wrap .img9{background-image: url("/assets/images/KakaoTalk_20200914_182659266_10.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+section .menu-image .text-wrap {display: grid; grid-template-columns: repeat(3,1fr); margin-top: 20px;}
+section .menu-image .text-wrap .img-text{text-align: center;}
+section .menu-image .text-wrap a{font-size: 24px; line-height: 35px; text-decoration: none; color: black;transform: scale(1);  transition: .3s;}
+section .menu-image .text-wrap a:hover {transform: scale(1.2); }
+aside{display: flex; flex-direction: column; width:322px; background:#F3F9FF; height: auto;  }
+aside .my-info {padding: 10px 10px 0; background: #B5CAE9; border-radius: 10px; height: 251px;margin-bottom: 21px; box-shadow: 0 4px 1px 0 #C4C4C4;}
+aside .my-info p{font-size: 24px; line-height: 24px; text-decoration: none; color: black;}
+aside .my-info a{font-size: 24px; line-height: 35px; text-decoration: none; color: black; transform: scale(1); transition: all 0.3s ease-in-out;}
+aside .my-info a:hover{transform: scale(1.2);}
+aside .my-info .line{width: 259px;border: 1px solid #A3A55F; transform: rotate(-0.69deg);margin-bottom: 5px;}
+aside .menu { background: #B5CAE9; border-radius: 10px; flex:1;display: flex; flex-direction: column; padding: 10px;}
+aside .menu .menu-wrap {display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 40px;}
+aside .menu .menu-wrap a{font-size: 24px; line-height: 35px; text-decoration: none; color: black;}
+aside .menu .menu-wrap .main-menu{margin-bottom: 3px;}
+aside .menu .menu-wrap .sub-menu{margin-left: 30px; margin-bottom: 4px; position: relative; display: inline-block; transition: .3s;}
+aside .menu .menu-wrap .sub-menu:after{ position: absolute; bottom: .3em;left: 0; content: ''; width: 200px; height: 1px; background-color: #A3A55F; opacity: 0.1; transition: .3s;}
+aside .menu .menu-wrap .sub-menu:hover:after{bottom: 0; opacity: 1;}
+aside .menu .menu-wrap .sub-menu:before{position:absolute; left: -27px; margin-top: 5px; content: url("../images/pencil.png"); width:12px; height: 12px; margin-right: 5px;}
+aside .menu .menu-wrap .line{width: 259px;border: 1px solid #A3A55F; transform: rotate(-0.69deg);margin-bottom: 5px;}
+footer{height: 145px; background: #6F7690; display: flex; flex-direction: column; justify-content: center; color: #FFFDEC; margin-top: 20px;}
+footer .footer-wrap { margin: 0 208px; }
+footer .footer-wrap h3{margin-left: 18px; font-size: 24px; line-height: 28px;}
