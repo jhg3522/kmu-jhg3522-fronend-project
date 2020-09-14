@@ -1,9 +1,10 @@
-body{margin: 0; max-width: 1860px; min-width: 1024px;}
-header {display: flex; flex-direction: row; justify-content: space-between; background: greenyellow; height: 65px;}
-main{display: flex; height: 701px; flex-direction: row; background: brown;  }
+body{margin: 0; max-width: 1440px; min-width: 1024px;}
+header {display: flex; flex-direction: row; justify-content: space-between;  height: 60px; background:#6F7691;}
+main{display: flex; height: 701px; flex-direction: row; background: brown; margin: 0 120px;}
 aside{display: flex; flex-direction: column; max-width: 250px; min-width: 200px; height: auto; background: black; color: white;}
 section{display: flex; flex-direction: column; justify-content: space-between; background: yellow; flex : 1;}
 footer{height: 70px; background: gray;}
 aside .my-info {height: 20%;background: gray;}
 aside .menu {display: flex; flex-direction: column; justify-content: space-between;}
 section .menu-image {height: 30%; background: skyblue;}
+.banner-img{max-width: 1440px; min-width: 1024px; height: 378px; border-radius: 3px; background-image: url("../images/banner.jpg"); background-size: cover; background-position: center;}
