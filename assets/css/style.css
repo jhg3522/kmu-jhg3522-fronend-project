@@ -1,5 +1,6 @@
-@font-face {font-family: "Nanum pen"; src: url("../font/NanumPenScript-regular.ttf")}
-body{margin: 0; width: 1440px; background: #F3F9FF; height: 1554px; font-family: "Nanum pen"; }
+@font-face {font-family: Nanum pen; src: url("../font/NanumPenScript-regular.ttf") format('truetype');}
+body{margin: 0; width: 1440px; background: #F3F9FF; height: 1554px;
+    font-family: "Nanum pen", serif; }
 p,h1,h2,h3,h4,h5{margin : 0;}
 body .banner-img{max-width: 1440px; min-width: 1024px; height: 375px; border-radius: 2px; background-image: url("../images/banner.jpg"); background-size: cover; background-position: center; box-shadow: 0 0 3px 0 black; margin-bottom: 20px;}
 header { height: 60px; background:#6F7691;}
