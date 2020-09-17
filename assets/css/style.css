@@ -45,3 +45,26 @@ footer{height: 145px; background: #6F7690; display: flex; flex-direction: column
 footer .footer-wrap { margin: 0 208px; }
 footer .footer-wrap h3{margin-left: 18px; font-size: 28px; line-height: 28px; font-weight: lighter;}
 footer .footer-wrap h3:first-child{margin-bottom: 20px;}
+
+@media( max-width: 1024px){
+
+}
+@media( max-width: 375px){
+    body {width: 375px;}
+    body .banner-img {max-width: 375px; min-width: 200px; height: 170px;}
+    body main{width: 375px; height: 650px; margin:0 auto;}
+    body main aside{display: none;}
+    body main section{width: 375px; }
+    body main section .menu-image {width: 375px; height: 200px; margin-left: 0; margin-bottom: 20px;}
+    body main section .menu-image .img-wrap{display: grid; grid-template-columns: repeat(3,1fr); margin-left: 20px;}
+    body main section .menu-image .img-wrap .img{width: 100px;height: 100px; transform: scale(1); transition: all 0.3s ease-in-out; box-shadow: 0 0 6px 0 black;}
+    body main section .menu-image .text-wrap{margin-top: 10px;}
+    body main section .menu-image .text-wrap .img-text {font-size: 20px;}
+    header .header-wrap {margin: 0 auto;}
+    header .logo{color: white; padding: 8px; font-size: 40px; line-height: 42px;}
+    header .member-menu{padding: 16px; font-size: 20px; line-height: 28px; }
+    footer {height: 40px; margin: 0;}
+    footer .footer-wrap { display: flex; flex-direction: row; justify-content: space-between; margin: 0 auto;}
+    footer .footer-wrap h3{font-size: 15px; margin: 0;}
+    footer .footer-wrap h3:first-child{margin-right: 15px; margin-bottom: 0;}
+}
