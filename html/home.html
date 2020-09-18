@@ -6,9 +6,8 @@
     <title>HomePage</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="../assets/js/function.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body style="font-family: 'Nanum Pen Script', cursive;">
     <header>
@@ -111,5 +110,17 @@
             <h3>연락처 : 010-5107-1668</h3>
         </div>
     </footer>
+<script>
+    $(".btn").click(function() {
+    $("#menu,.page_cover,html,aside").addClass("open");
+    window.location.hash = "#open";
+});
+
+window.onhashchange = function() {
+    if (location.hash !== "#open") {
+        $("#menu,.page_cover,html,aside").removeClass("open");
+    }
+};
+</script>
 </body>
 </html>

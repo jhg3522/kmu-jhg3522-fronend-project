@@ -32,7 +32,7 @@ aside .my-info p{font-size: 24px; line-height: 30px; font-weight: bold;}
 aside .my-info a{color: #dfe9f8; font-weight: lighter; margin-top: 40px;text-align: center; font-size: 32px; line-height: 40px;  text-decoration: none; transform: scale(1); transition: all 0.3s ease-in-out; }
 aside .my-info a:hover{transform: scale(1.2);}
 aside .my-info .line{margin:10px 0; width: 259px;border: 3px solid #dfe9f8; transform: rotate(-0.69deg);}
-aside .menu { background: #B5CAE9; border-radius: 10px; flex:1;display: flex; flex-direction: column; padding: 10px;}
+aside .menu { background: #b5cae9; border-radius: 10px; flex:1;display: flex; flex-direction: column; padding: 10px;}
 aside .menu .menu-wrap {display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 40px;}
 aside .menu .menu-wrap a{font-size: 35px; line-height: 35px; text-decoration: none; color: black;}
 aside .menu .menu-wrap .main-menu{margin-bottom: 3px;}
@@ -53,17 +53,19 @@ footer .footer-wrap h3:first-child{margin-bottom: 20px;}
     body {width: 375px;height: 650px;}
     body .banner-img {max-width: 375px; min-width: 200px; height: 170px;}
     body main{width: 375px; height: 650px; margin:0 auto;}
-    aside{display: flex; flex-direction: column; width:280px; height: 550px; overflow: hidden; background:transparent; position: fixed;top: 30px; right: -320px; z-index: 10; }
-    aside .my-info {display: flex; flex-direction: column; justify-content: start; padding: 10px 10px 0;  height: 150px; margin-bottom: 21px; background-color: transparent; box-shadow: none;}
+    aside{max-width:280px; height: 550px; overflow: hidden; background:transparent; position: fixed; top: 40px; right: -320px; z-index: 10; transition: All 0.5s ease-in-out;}
+    aside.open{display: flex; flex-direction: column; right: 25px;}
+    aside .my-info {display: flex; flex-direction: column; justify-content: start; padding: 10px 10px 0;  height: 150px; margin-bottom: 12px; background-color: transparent; box-shadow: none; border: 2px solid #3b4258;}
     aside .my-info p{font-size: 18px; line-height: 30px; font-weight: bold;}
-    aside .my-info a{ color: #dfe9f8; font-weight: lighter; margin-top: 0; text-align: center; font-size: 32px; line-height: 30px;  text-decoration: none; transform: scale(1); transition: all 0.3s ease-in-out; border-bottom: 1px solid white; }
+    aside .my-info a{ color: #dfe9f8; font-weight: lighter; margin-top: 0; text-align: center; font-size: 32px; line-height: 30px;  text-decoration: none; transform: scale(1); transition: all 0.3s ease-in-out; border-bottom: 1px solid white; display: none;}
     aside .my-info a:hover{transform: scale(1.2);}
-    aside .my-info .line{margin:10px 0; width: 259px;border: 3px solid #dfe9f8; transform: rotate(-0.69deg);}
+    aside .my-info .line{margin:10px 0; width: 259px;border: 3px solid #dfe9f8; transform: scale(2);}
     aside .menu {display: flex; flex-direction: column; justify-content: start; padding: 10px 10px 0;  height: 150px; margin-bottom: 21px; background-color: transparent; box-shadow: none;}
     aside .menu .menu-wrap {display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;}
-    aside .menu .menu-wrap a{font-size: 15px; line-height: 35px; text-decoration: none; color: black;}
+    aside .menu .menu-wrap a{font-weight: bold; font-size: 20px; line-height: 35px; text-decoration: none; color: black;}
     aside .menu .menu-wrap .main-menu{margin-bottom: 3px;}
-    aside .menu .menu-wrap .sub-menu{font-size: 13px; margin:0 0 4px 30px; position: relative; display: inline-block; transition: .3s;}
+    aside .menu .menu-wrap .sub-menu{font-size: 17px; margin:0 0 4px 30px; position: relative; display: inline-block; transition: .3s;}
+    aside .menu .menu-wrap .line{margin:10px 0; width: 259px;border: 3px solid #dfe9f8; transform: scale(2);}
     body main section{width: 375px; }
     body main section .menu-image {width: 375px; height: 200px; margin-left: 0; margin-bottom: 20px;}
     body main section .menu-image .img-wrap{display: grid; grid-template-columns: repeat(3,1fr); margin-left: 20px;}
@@ -78,10 +80,11 @@ footer .footer-wrap h3:first-child{margin-bottom: 20px;}
     footer .footer-wrap { display: flex; flex-direction: row; justify-content: space-between; margin: 0 auto;}
     footer .footer-wrap h3{font-size: 15px; margin: 0;}
     footer .footer-wrap h3:first-child{margin-right: 15px; margin-bottom: 0;}
-    #menu {width: 300px; height: 600px; position: fixed; top: 0; right: -320px; z-index: 10; border: 1px solid #5b607d; border-radius: 20px; background-color: #6F7691; text-align: center; transition: All 0.2s ease; -webkit-transition: All 0.2s ease; -moz-transition: All 0.2s ease; -o-transition: All 0.2s ease;}
+    #menu {width: 300px; height: 600px; position: fixed; top: 0; right: -320px; z-index: 10; border: 1px solid #5b607d; border-radius: 20px; background-color: #6f7691; text-align: center; transition: All 0.5s ease-in-out; }
     #menu.open {right : 10px;}
     .close {width: 50px; height: 50px; position: absolute; right: 0; top: 0; background-image: url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png"); background-size: 50%; background-repeat: no-repeat; background-position: center; cursor: pointer;}
+    .page_cover { width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.2); z-index: 4; display: none; transition: All 0.5s ease}
     .page_cover.open { display: block; }
-    .page_cover { width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.4); z-index: 4; display: none; }
+
     html.open {overflow: hidden;}
 }
