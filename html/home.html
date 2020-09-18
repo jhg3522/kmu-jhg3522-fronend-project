@@ -6,6 +6,9 @@
     <title>HomePage</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/function.js"></script>
+
 </head>
 <body style="font-family: 'Nanum Pen Script', cursive;">
     <header>
@@ -15,10 +18,16 @@
                 <a href="#">Post</a>
                 <a href="#">Login</a>
             </div>
+            <div class="btn"></div>
         </div>
+
     </header>
     <div class="banner-img"></div>
     <main>
+        <div onclick="history.back();" class="page_cover"></div>
+        <div id="menu">
+            <div onclick="history.back();" class="close"></div>
+        </div>
         <aside>
             <div class="my-info">
                 <p>My-info</p>

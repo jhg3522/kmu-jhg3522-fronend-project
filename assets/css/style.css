@@ -49,22 +49,39 @@ footer .footer-wrap h3:first-child{margin-bottom: 20px;}
 @media( max-width: 1024px){
 
 }
-@media( max-width: 375px){
-    body {width: 375px;}
+@media( max-width: 376px){
+    body {width: 375px;height: 650px;}
     body .banner-img {max-width: 375px; min-width: 200px; height: 170px;}
     body main{width: 375px; height: 650px; margin:0 auto;}
-    body main aside{display: none;}
+    aside{display: flex; flex-direction: column; width:280px; height: 550px; overflow: hidden; background:transparent; position: fixed;top: 30px; right: -320px; z-index: 10; }
+    aside .my-info {display: flex; flex-direction: column; justify-content: start; padding: 10px 10px 0;  height: 150px; margin-bottom: 21px; background-color: transparent; box-shadow: none;}
+    aside .my-info p{font-size: 18px; line-height: 30px; font-weight: bold;}
+    aside .my-info a{ color: #dfe9f8; font-weight: lighter; margin-top: 0; text-align: center; font-size: 32px; line-height: 30px;  text-decoration: none; transform: scale(1); transition: all 0.3s ease-in-out; border-bottom: 1px solid white; }
+    aside .my-info a:hover{transform: scale(1.2);}
+    aside .my-info .line{margin:10px 0; width: 259px;border: 3px solid #dfe9f8; transform: rotate(-0.69deg);}
+    aside .menu {display: flex; flex-direction: column; justify-content: start; padding: 10px 10px 0;  height: 150px; margin-bottom: 21px; background-color: transparent; box-shadow: none;}
+    aside .menu .menu-wrap {display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;}
+    aside .menu .menu-wrap a{font-size: 15px; line-height: 35px; text-decoration: none; color: black;}
+    aside .menu .menu-wrap .main-menu{margin-bottom: 3px;}
+    aside .menu .menu-wrap .sub-menu{font-size: 13px; margin:0 0 4px 30px; position: relative; display: inline-block; transition: .3s;}
     body main section{width: 375px; }
     body main section .menu-image {width: 375px; height: 200px; margin-left: 0; margin-bottom: 20px;}
     body main section .menu-image .img-wrap{display: grid; grid-template-columns: repeat(3,1fr); margin-left: 20px;}
     body main section .menu-image .img-wrap .img{width: 100px;height: 100px; transform: scale(1); transition: all 0.3s ease-in-out; box-shadow: 0 0 6px 0 black;}
     body main section .menu-image .text-wrap{margin-top: 10px;}
     body main section .menu-image .text-wrap .img-text {font-size: 20px;}
-    header .header-wrap {margin: 0 auto;}
+    header .header-wrap {margin: 0 auto;display: flex;flex-direction: row;justify-content: space-between;}
     header .logo{color: white; padding: 8px; font-size: 40px; line-height: 42px;}
-    header .member-menu{padding: 16px; font-size: 20px; line-height: 28px; }
-    footer {height: 40px; margin: 0;}
+    header .member-menu{display: none;}
+    header .btn {width: 50px; height: 50px; position: absolute; right: -20px; top: 8px; z-index: 1; background-image: url("../images/menu_img.png"); background-size: cover; background-repeat: no-repeat; background-position: center; cursor: pointer;}
+    footer {height: 45px; margin: 0;}
     footer .footer-wrap { display: flex; flex-direction: row; justify-content: space-between; margin: 0 auto;}
     footer .footer-wrap h3{font-size: 15px; margin: 0;}
     footer .footer-wrap h3:first-child{margin-right: 15px; margin-bottom: 0;}
+    #menu {width: 300px; height: 600px; position: fixed; top: 0; right: -320px; z-index: 10; border: 1px solid #5b607d; border-radius: 20px; background-color: #6F7691; text-align: center; transition: All 0.2s ease; -webkit-transition: All 0.2s ease; -moz-transition: All 0.2s ease; -o-transition: All 0.2s ease;}
+    #menu.open {right : 10px;}
+    .close {width: 50px; height: 50px; position: absolute; right: 0; top: 0; background-image: url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png"); background-size: 50%; background-repeat: no-repeat; background-position: center; cursor: pointer;}
+    .page_cover.open { display: block; }
+    .page_cover { width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.4); z-index: 4; display: none; }
+    html.open {overflow: hidden;}
 }
