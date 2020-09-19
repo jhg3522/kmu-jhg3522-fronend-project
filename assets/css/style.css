@@ -38,6 +38,7 @@ aside .menu .menu-wrap a{font-size: 35px; line-height: 35px; text-decoration: no
 aside .menu .menu-wrap .main-menu{margin-bottom: 3px;}
 aside .menu .menu-wrap .sub-menu{font-size: 30px; margin:0 0 4px 30px; position: relative; display: inline-block; transition: .3s;}
 aside .menu .menu-wrap .sub-menu:after{ position: absolute; bottom: .3em;left: 0; content: ''; width: 200px; height: 1px; background-color: #dfe9f8; opacity: 0.1; transition: .3s;}
+aside .menu .menu-wrap .sub-menu:hover{transform: scale(1.02);}
 aside .menu .menu-wrap .sub-menu:hover:after{bottom: 0; opacity: 1;}
 aside .menu .menu-wrap .sub-menu:before{position:absolute; left: -27px; margin-top: 5px; content: url("../images/pencil.png"); width:12px; height: 12px; margin-right: 5px;}
 aside .menu .menu-wrap .line{width: 259px;border: 3px solid #dfe9f8; transform: rotate(-0.69deg);margin-bottom: 9px;}
@@ -47,7 +48,44 @@ footer .footer-wrap h3{margin-left: 18px; font-size: 28px; line-height: 28px; fo
 footer .footer-wrap h3:first-child{margin-bottom: 20px;}
 
 @media( max-width: 1024px){
+    body {width: 1024px;height: 960px;}
+    body .banner-img {max-width: 1024px; min-width: 1000px; height: 220px;}
+    body main{width: 1024px; height: 960px; margin:0 auto;}
+    header .header-wrap {display: flex;flex-direction: row;justify-content: space-between; margin: 0;}
+    header .logo{color: white; padding: 8px; font-size: 40px; line-height: 42px;}
+    header .member-menu{display: none;}
+    header .btn {width: 60px; height: 60px; position: absolute; right: 0; top: 2px; z-index: 1; background-image: url("../images/menu_img.png"); background-size: cover; background-repeat: no-repeat; background-position: center; cursor: pointer;}
+    aside{max-width:680px; height: 620px; overflow: hidden; background:transparent; position: fixed; top: 60px; right: -440px; z-index: 10; transition: All 0.5s ease-in-out;}
+    aside.open{display: flex; flex-direction: column; right: 20px; width: 680px;}
+    aside .my-info {display: flex; flex-direction: column; justify-content: start; padding: 10px 10px 0;  height: 150px; margin-bottom: 12px; background-color: transparent; box-shadow: none; border: 2px solid #3b4258;}
+    aside .my-info p{font-size: 22px; line-height: 30px; font-weight: bold;}
+    aside .my-info a{display: none;}
+    aside .my-info .line{margin:10px 0; width: 450px;border: 3px solid #dfe9f8; transform: scale(2);}
+    aside .menu {display: flex; flex-direction: column; justify-content: start; padding: 10px 10px 0;  height: 150px; margin-bottom: 21px; background-color: transparent; box-shadow: none;}
+    aside .menu .menu-wrap {display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 0;}
+    aside .menu .menu-wrap a{font-weight: bold; font-size: 20px; line-height: 35px; text-decoration: none; color: black;}
+    aside .menu .menu-wrap .main-menu{margin-bottom: 3px;}
+    aside .menu .menu-wrap .sub-menu{font-size: 17px; margin:0 0 4px 30px; position: relative; display: inline-block; transition: .3s;}
+    aside .menu .menu-wrap .sub-menu:after{ position: absolute; bottom: .3em;left: 0; content: ''; width: 600px; height: 1px; background-color: #dfe9f8; opacity: 0.1; transition: .3s;}
+    aside .menu .menu-wrap .line{margin:10px 0; width: 450px;border: 3px solid #dfe9f8; transform: scale(2);}
+    body main section{width: 1024px; }
+    body main section .menu-image {width: 1024px; height: 400px; margin-left: 0; margin-bottom: 20px;}
+    body main section .menu-image .img-wrap{display: grid; grid-template-columns: repeat(3,1fr); margin-left: 60px;}
+    body main section .menu-image .img-wrap .img{width: 250px;height: 200px; transform: scale(1); transition: all 0.3s ease-in-out; box-shadow: 0 0 6px 0 black;}
+    body main section .menu-image .text-wrap{margin-top: 10px;}
+    body main section .menu-image .text-wrap .img-text {font-size: 30px;}
+    body main section .menu-image .text-wrap .img-text:last-child{margin-right: 40px;}
+    footer {height: 45px; margin: 0;}
+    footer .footer-wrap { display: flex; flex-direction: row; justify-content: space-between; margin: 0 auto;}
+    footer .footer-wrap h3{font-size: 15px; margin: 0;}
+    footer .footer-wrap h3:first-child{margin-right: 15px; margin-bottom: 0;}
+    #menu {width: 700px; height: 700px; position: fixed; top: 0; right: -750px; z-index: 10; border: 1px solid #5b607d; border-radius: 20px; background-color: #6f7691; text-align: center; transition: All 0.5s ease-in-out; }
+    #menu.open {right : 10px;}
+    .close {width: 60px; height: 60px; position: absolute; right: 0; top: 0; background-image: url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png"); background-size: 50%; background-repeat: no-repeat; background-position: center; cursor: pointer;}
+    .page_cover { width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.2); z-index: 4; display: none; transition: All 0.5s ease}
+    .page_cover.open { display: block; }
 
+    html.open {overflow: hidden;}
 }
 @media( max-width: 376px){
     body {width: 375px;height: 650px;}
