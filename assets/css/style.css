@@ -4,28 +4,29 @@ body .banner-img{max-width: 1440px; min-width: 1024px; height: 375px; border-rad
 header { height: 60px; background:#6F7691;}
 header .header-wrap{margin: 0 208px;display: flex; flex-direction: row; justify-content: space-between; }
 header .logo{color: white; padding: 8px; font-size: 36px; line-height: 42px;}
-header .member-menu{padding: 16px; font-size: 24px; line-height: 28px; }
+header .member-menu{padding: 16px; font-size: 24px; line-height: 28px;  }
 header .member-menu a{text-decoration: none; color: black;}
+header .btn {display: none;}
 main{display: flex; height: 1000px; flex-direction: row; justify-content: space-between; margin: 0 208px;}
-section{display: flex; flex-direction: column; justify-content: space-between; background: #F3F9FF;}
-section .menu-image {height: 312px; width: 680px; margin-left: 21px; background: #C4C4C4; border-radius: 10px; }
-section .menu-image h3{font-size: 24px; line-height: 28px; color: #000000;margin:11px;}
-section .menu-image .img-wrap{display: grid; grid-template-columns: repeat(3,1fr); margin-left: 18px;}
-section .menu-image .img-wrap .img{width: 200px; height:200px;  transform: scale(1); transition: all 0.3s ease-in-out; box-shadow: 0 0 6px 0 black;}
-section .menu-image .img-wrap .img:hover{transform: scale(1.1);}
-section .menu-image .img-wrap .img1{background-image: url("../images/KakaoTalk_20200914_182659266_02.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;}
-section .menu-image .img-wrap .img2{background-image: url("../images/KakaoTalk_20200914_182659266_15.png"); background-repeat: no-repeat; background-size: cover; border-radius: 10px; background-position: center;}
-section .menu-image .img-wrap .img3{background-image: url("../images/KakaoTalk_20200914_182659266_04.png"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
-section .menu-image .img-wrap .img4{background-image: url("../images/KakaoTalk_20200914_182659266_19.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
-section .menu-image .img-wrap .img5{background-image: url("../images/KakaoTalk_20200914_182659266_06.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
-section .menu-image .img-wrap .img6{background-image: url("../images/KakaoTalk_20200914_182659266_07.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
-section .menu-image .img-wrap .img7{background-image: url("../images/KakaoTalk_20200914_182659266.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
-section .menu-image .img-wrap .img8{background-image: url("../images/KakaoTalk_20200914_182659266_14.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
-section .menu-image .img-wrap .img9{background-image: url("../images/KakaoTalk_20200914_182659266_10.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
-section .menu-image .text-wrap {display: grid; grid-template-columns: repeat(3,1fr); margin-top: 15px;}
-section .menu-image .text-wrap .img-text{text-align: center;}
-section .menu-image .text-wrap a{font-size: 30px;  font-weight: normal;line-height: 35px; text-decoration: none; color: black;transform: scale(1);  transition: .3s;}
-section .menu-image .text-wrap a:hover {transform: scale(1.2); }
+.home{display: flex; flex-direction: column; justify-content: space-between; background: #F3F9FF;}
+.home .menu-image {height: 312px; width: 680px; margin-left: 21px; background: #C4C4C4; border-radius: 10px; }
+.home .menu-image h3{font-size: 24px; line-height: 28px; color: #000000;margin:11px;}
+.home .menu-image .img-wrap{display: grid; grid-template-columns: repeat(3,1fr); margin-left: 18px;}
+.home .menu-image .img-wrap .img{width: 200px; height:200px;  transform: scale(1); transition: all 0.3s ease-in-out; box-shadow: 0 0 6px 0 black;}
+.home .menu-image .img-wrap .img:hover{transform: scale(1.1);}
+.home .menu-image .img-wrap .img1{background-image: url("../images/KakaoTalk_20200914_182659266_02.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;}
+.home .menu-image .img-wrap .img2{background-image: url("../images/KakaoTalk_20200914_182659266_15.png"); background-repeat: no-repeat; background-size: cover; border-radius: 10px; background-position: center;}
+.home .menu-image .img-wrap .img3{background-image: url("../images/KakaoTalk_20200914_182659266_04.png"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+.home .menu-image .img-wrap .img4{background-image: url("../images/KakaoTalk_20200914_182659266_19.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+.home .menu-image .img-wrap .img5{background-image: url("../images/KakaoTalk_20200914_182659266_06.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+.home .menu-image .img-wrap .img6{background-image: url("../images/KakaoTalk_20200914_182659266_07.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+.home .menu-image .img-wrap .img7{background-image: url("../images/KakaoTalk_20200914_182659266.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+.home .menu-image .img-wrap .img8{background-image: url("../images/KakaoTalk_20200914_182659266_14.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+.home .menu-image .img-wrap .img9{background-image: url("../images/KakaoTalk_20200914_182659266_10.jpg"); background-repeat: no-repeat; background-size: cover; border-radius: 10px;background-position: center;}
+.home .menu-image .text-wrap {display: grid; grid-template-columns: repeat(3,1fr); margin-top: 15px;}
+.home .menu-image .text-wrap .img-text{text-align: center;}
+.home .menu-image .text-wrap a{font-size: 30px;  font-weight: normal;line-height: 35px; text-decoration: none; color: black;transform: scale(1);  transition: .3s;}
+.home .menu-image .text-wrap a:hover {transform: scale(1.2); }
 aside{display: flex; flex-direction: column; width:322px; background:#F3F9FF; height: auto;  }
 aside .my-info {display: flex; flex-direction: column; justify-content: start; padding: 10px 10px 0; background: #B5CAE9; border-radius: 10px; height: 251px;margin-bottom: 21px; box-shadow: 0 4px 1px 0 #C4C4C4;}
 aside .my-info p{font-size: 24px; line-height: 30px; font-weight: bold;}
@@ -126,3 +127,30 @@ footer .footer-wrap h3:first-child{margin-bottom: 20px;}
 
     html.open {overflow: hidden;}
 }
+
+.page {display: flex; flex-direction: row; justify-content: space-between;}
+.page .post{width: 680px; height: 1000px;background: transparent;}
+.blue {
+    border-top: solid 3px #a9a9a9;
+    border-bottom: solid 1px #adadad;
+    height: 33px;
+    width: 700px;
+    max-width: 95%;
+    color: #e9e9e9;
+    background: #fff;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#575757));
+    background: -moz-linear-gradient(top,  #888,  #575757);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#575757');
+}
+#list {
+    border-collapse:collapse;
+    text-align:center;
+}
+.list th {padding:3px 6px;}
+.list td {border-bottom:1px solid #999; padding:3px 6px; height:25px;}
+.index { width:50px;}
+.subject {width:450px; max-width:98%;}
+.writer { width:95px;}
+.day { width:50px;}
+.cnt{ width:50px;}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../assets/js/function.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body style="font-family: 'Nanum Pen Script', cursive;">
+<header>
+    <div class="header-wrap">
+        <div class="logo">logo</div>
+        <div class="member-menu">
+            <a href="#">Post</a>
+            <a href="#">Login</a>
+        </div>
+        <div class="btn"></div>
+    </div>
+
+</header>
+<div class="banner-img"></div>
+<main>
+    <div onclick="history.back();" class="page_cover"></div>
+    <div id="menu">
+        <div onclick="history.back();" class="close"></div>
+    </div>
+    <aside>
+        <div class="my-info">
+            <p>My-info</p>
+            <div class="line"></div>
+            <p class="name">NickName : COCO_HG</p>
+            <p class="name">Gender : Male</p>
+            <p class="name">Age : 26</p>
+            <a href="#">~ My Content List ~</a>
+        </div>
+        <div class="menu">
+            <div class="menu-wrap">
+                <a class="main-menu" href="#">Main-menu</a>
+                <div class="line"></div>
+                <a class="sub-menu" href="#">Sub-menu</a>
+                <a class="sub-menu" href="#">Sub-menu</a>
+                <a class="sub-menu" href="#">Sub-menu</a>
+            </div>
+            <div class="menu-wrap">
+                <a class="main-menu" href="#">Main-menu</a>
+                <div class="line"></div>
+                <a class="sub-menu" href="#">Sub-menu</a>
+                <a class="sub-menu" href="#">Sub-menu</a>
+                <a class="sub-menu" href="#">Sub-menu</a>
+            </div>
+            <div class="menu-wrap">
+
+                <a class="main-menu" href="#">Main-menu</a>
+                <div class="line"></div>
+                <a class="sub-menu" href="#">Sub-menu</a>
+                <a class="sub-menu" href="#">Sub-menu</a>
+                <a class="sub-menu" href="#">Sub-menu</a>
+            </div>
+        </div>
+
+    </aside>
+    <section class="page">
+        <div class="post">
+            <div class="post-inner">
+                <div class="post-name"><h1>MainSubject</h1></div>
+                <table class=“list”>
+                    <tbody>
+                    <tr>
+                        <th class="index blue"> 번호 </th>
+                        <th class="subject blue"> 제 목 </th>
+                        <th class="writer blue">글쓴이</th>
+                        <th class="day blue">날짜</th>
+                        <th class="cnt blue">조회</th>
+                    </tr>
+                    <tr>
+                        <td class=“index”>161</td>
+                        <td class=“subject”>
+                            <div id=“subject”> CSS display 속성(시각적 서식 속성 관련 CSS) :: HTML대학</div>
+                            <div id=“hidwrite”>글씨쟁이님이 13.02.15에 쓰신글</div>
+                        </td>
+                        <td class=“writerb”>글씨쟁이</td>
+                        <td class=“writedayb”>13.2.5</td>
+                        <td class=“cntcountb”>2,554</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="pagination">
+
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-wrap">
+        <h3>jhg3522@kookmin.ac.kr</h3>
+        <h3>연락처 : 010-5107-1668</h3>
+    </div>
+</footer>
+<script>
+    $(".btn").click(function() {
+        $("#menu,.page_cover,html,aside").addClass("open");
+        window.location.hash = "#open";
+    });
+
+    window.onhashchange = function() {
+        if (location.hash !== "#open") {
+            $("#menu,.page_cover,html,aside").removeClass("open");
+        }
+    };
+</script>
+</body>
+</html>
