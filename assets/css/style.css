@@ -123,9 +123,9 @@ footer .footer-wrap h3:first-child{margin-bottom: 20px;}
     html.open {overflow: hidden;}
 }
 @media( max-width: 376px){
-    body {width: 375px;height: 650px;}
+    body {width: 375px;height: 350px;}
     body .banner-img {max-width: 375px; min-width: 200px; height: 170px;}
-    body main{width: 375px; height: 650px; margin:0 auto;}
+    body main{width: 375px; height: 375px; margin:0 auto;}
     aside{max-width:280px; height: 550px; overflow: hidden; background:transparent; position: fixed; top: 40px; right: -320px; z-index: 10; transition: All 0.5s ease-in-out;}
     aside.open{display: flex; flex-direction: column; right: 25px;}
     aside .my-info {display: flex; flex-direction: column; justify-content: start; padding: 10px 10px 0;  height: 150px; margin-bottom: 12px; background-color: transparent; box-shadow: none; border: 2px solid #3b4258;}
@@ -160,7 +160,7 @@ footer .footer-wrap h3:first-child{margin-bottom: 20px;}
     .page_cover.open { display: block; }
     .page{width: 100%; margin: 0;}
      html.open {overflow: hidden;}
-    .page .post{width: 370px; height: 500px;background: transparent; margin: 0 auto;}
+    .page .post{width: 370px; height: 300px;background: transparent; margin: 0 auto;}
     .page .post .blue {width: 30px;}
     .page .post .index { width:25px;}
     .subject-inner{ padding-left: 20px;}
