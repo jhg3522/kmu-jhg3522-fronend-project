@@ -148,7 +148,7 @@ footer .footer-wrap h3:first-child{margin-bottom: 20px;}
     header .header-wrap {margin: 0 auto;display: flex;flex-direction: row;justify-content: space-between;}
     header .logo{color: white; padding: 8px; font-size: 40px; line-height: 42px;}
     header .member-menu{display: none;}
-    header .btn {display: flex; width: 50px; height: 50px; position: absolute; right: -20px; top: 8px; z-index: 1; background-image: url("../images/menu_img.png"); background-size: cover; background-repeat: no-repeat; background-position: center; cursor: pointer;}
+    header .btn {display: flex; width: 50px; height: 50px; position: absolute; right: -2px; top: 8px; z-index: 1; background-image: url("../images/menu_img.png"); background-size: cover; background-repeat: no-repeat; background-position: center; cursor: pointer;}
     footer {height: 45px; margin: 0;}
     footer .footer-wrap { display: flex; flex-direction: row; justify-content: space-between; margin: 0 auto;}
     footer .footer-wrap h3{font-size: 15px; margin: 0;}
