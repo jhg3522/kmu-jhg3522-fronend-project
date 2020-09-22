@@ -48,7 +48,6 @@ footer{height: 145px; background: #6F7690; display: flex; flex-direction: column
 footer .footer-wrap { margin: 0 208px; }
 footer .footer-wrap h3{margin-left: 18px; font-size: 28px; line-height: 28px; font-weight: lighter;}
 footer .footer-wrap h3:first-child{margin-bottom: 20px;}
-
 .post-inner{display: flex; flex-direction: column; justify-content: space-between;}
 .page {display: flex; flex-direction: row; justify-content: space-between; margin-left: 20px;}
 .page .post{width: 680px; height: 1000px;background: transparent;}
@@ -116,7 +115,7 @@ footer .footer-wrap h3:first-child{margin-bottom: 20px;}
     footer .footer-wrap h3:first-child{margin-right: 15px; margin-bottom: 0;}
     #menu {width: 700px; height: 700px; position: fixed; top: 0; right: -750px; z-index: 10; border: 1px solid #5b607d; border-radius: 20px; background-color: #6f7691; text-align: center; transition: All 0.5s ease-in-out; }
     #menu.open {right : 10px;}
-    .close {width: 60px; height: 60px; position: absolute; right: 0; top: 0; background-image: url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png"); background-size: 50%; background-repeat: no-repeat; background-position: center; cursor: pointer;}
+    .close {width: 60px; height: 60px; position: absolute; right: 0; top: 0; background-image: url("../images/close.png"); background-size: 50%; background-repeat: no-repeat; background-position: center; cursor: pointer;}
     .page_cover { width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.2); z-index: 4; display: none; transition: All 0.5s ease}
     .page_cover.open { display: block; }
     .page{width: 100%; margin: 0 30px;}
@@ -156,7 +155,7 @@ footer .footer-wrap h3:first-child{margin-bottom: 20px;}
     footer .footer-wrap h3:first-child{margin-right: 15px; margin-bottom: 0;}
     #menu {width: 300px; height: 600px; position: fixed; top: 0; right: -320px; z-index: 10; border: 1px solid #5b607d; border-radius: 20px; background-color: #6f7691; text-align: center; transition: All 0.5s ease-in-out; }
     #menu.open {right : 10px;}
-    .close {width: 50px; height: 50px; position: absolute; right: 0; top: 0; background-image: url("http://s1.daumcdn.net/cfs.tistory/custom/blog/204/2048858/skin/images/close.png"); background-size: 50%; background-repeat: no-repeat; background-position: center; cursor: pointer;}
+    .close {width: 50px; height: 50px; position: absolute; right: 0; top: 0; background-image: url("../images/close.png"); background-size: 50%; background-repeat: no-repeat; background-position: center; cursor: pointer;}
     .page_cover { width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: rgba(0,0,0,0.2); z-index: 4; display: none; transition: All 0.5s ease}
     .page_cover.open { display: block; }
     .page{width: 100%; margin: 0;}
