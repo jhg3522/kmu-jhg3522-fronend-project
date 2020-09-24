@@ -2,14 +2,14 @@ body {width: 1024px; height: 680px; margin:0;}
 header {background: #e8e5e5; height: 30px; margin: 0;}
 header .wrap{display: flex; flex-direction: row; justify-content: flex-end;}
 section {background:#e8e5e5; width: 100%; height: 100%; margin : 0; }
-section main{width: 100%; height: 650px;%; background: gray;; border-radius: 20px; padding-top : 10px;}
+section main{width: 100%; height: 650px;%; background: gray;; border-radius: 20px; padding-top : 10px; box-shadow:  2px 2px 44px #cdd0d3,-2px -2px 44px #ffffff;}
 section main .inner{width: 1000px; height: 640px;  margin: 0 auto;  display: flex; flex-direction: row; justify-content: space-between; border-radius: 20px; background:  #EBF3FA;}
 section main .inner .inner2 {height: 89%; width: 70%;  margin-left: 25px; display: block; margin-top: 40px; border-radius: 20px; background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%);box-shadow:  7px 7px 14px #cdd0d3,-7px -7px 14px #ffffff;}
 section main .inner .inner2-wrap {width : 96%; height: 97%; background: #d2d2d2; margin-left: 15px; margin-top: 10px; border-radius: 10px;}
 section main .inner .inner2-wrap .inner-header{ width: 95%; height: 40px; background: transparent; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-between;}
 section main .inner .inner2-wrap .inner-header .today{padding: 24px; margin-left: 16px; font-size: 11px; font-weight: bold; display: flex;}
 section main .inner .inner2-wrap .inner-header .today .num{color: #ff5900; margin: 0 3px}
-section main .inner .inner2-wrap .inner-header .page-name{ padding: 15px; margin-right: 260px; font-weight: bold; color: #4040f3; font-size: 19px;}
+section main .inner .inner2-wrap .inner-header .page-name{ padding: 20px; margin-right: 245px; font-weight: bold; color: #3185ff; font-size: 19px; text-shadow: #8e8e8e 1px 1px 2px, #ffffff -1px -1px 2px;}
 section main .inner .inner2-wrap .inner-content{display: flex; flex-direction: row; justify-content: space-between; width: 100%; height: 100%; margin: 10px auto 0;}
 section main .inner .inner2-wrap .inner-content .shadow{border-radius: 17px; background: #fcfcfc; box-shadow:  6px 6px 3px #e0e0e0, -6px -6px 3px #ffffff;}
 section main .inner .inner2-wrap .inner-content .inner-aside{width: 27%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-left: 10px;}
