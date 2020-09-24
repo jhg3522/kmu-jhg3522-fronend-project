@@ -2,22 +2,27 @@ body {width: 1024px; height: 680px; margin:0;}
 header {background: #e8e5e5; height: 30px; margin: 0;}
 header .wrap{display: flex; flex-direction: row; justify-content: flex-end;}
 section {background:#e8e5e5; width: 100%; height: 100%; margin : 0; }
-section main{width: 100%; height: 100%; background: gray; padding-top: 20px;}
-section main .inner{width: 1000px; height: 660px; background: #3b4258; margin: 0 auto;  display: flex; flex-direction: row; justify-content: space-between;}
-section main .inner .inner2 {height: 93%; width: 70%; background: greenyellow; margin-left: 25px; display: block; margin-top: 20px;}
-section main .inner .inner2-wrap {width : 96%; height: 97%; background: white; margin-left: 15px; margin-top: 10px;}
-section main .inner .inner2-wrap .inner-header{ width: 95%; height: 40px; background: black; margin: 0 auto;}
+section main{width: 100%; height: 650px;%; background: gray;; border-radius: 20px; padding-top : 10px;}
+section main .inner{width: 1000px; height: 640px; background: #55b9f3; margin: 0 auto;  display: flex; flex-direction: row; justify-content: space-between; border-radius: 20px; }
+section main .inner .inner2 {height: 89%; width: 70%;  margin-left: 25px; display: block; margin-top: 40px; border-radius: 20px;background: #55b9f3; box-shadow:  5px 5px 12px #4ca5d8, -5px -5px 12px #5ecdff;}
+section main .inner .inner2-wrap {width : 96%; height: 97%; background: #d2d2d2; margin-left: 15px; margin-top: 10px; border-radius: 10px;}
+section main .inner .inner2-wrap .inner-header{ width: 95%; height: 40px; background: transparent; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-between;}
+section main .inner .inner2-wrap .inner-header .today{padding: 24px; margin-left: 16px; font-size: 11px; font-weight: bold; display: flex;}
+section main .inner .inner2-wrap .inner-header .today .num{color: #ff5900; margin: 0 3px}
+section main .inner .inner2-wrap .inner-header .page-name{ padding: 15px; margin-right: 260px; font-weight: bold; color: #4040f3; font-size: 19px;}
 section main .inner .inner2-wrap .inner-content{display: flex; flex-direction: row; justify-content: space-between; width: 100%; height: 100%; margin: 10px auto 0;}
-section main .inner .inner2-wrap .inner-content .inner-aside{width: 27%; height: 500px; background: bisque; border-radius: 20px; margin-left: 10px;}
-section main .inner .inner2-wrap .inner-content .inner-aside .thumbnail{width: 95%; height: 300px; background: white; display: block; margin: 20px auto;}
-section main .inner .inner2-wrap .inner-content .inner-aside .my-info{width: 95%; height: 140px; background: white; display: block; margin: 20px auto;}
-section main .inner .inner2-wrap .inner-content .inner-main{width:68%; height: 500px; background: bisque; border-radius: 20px; margin-right: 10px;}
+section main .inner .inner2-wrap .inner-content .shadow{border-radius: 17px; background: #fcfcfc; box-shadow:  6px 6px 3px #e0e0e0, -6px -6px 3px #ffffff;}
+section main .inner .inner2-wrap .inner-content .inner-aside{width: 27%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-left: 10px;}
+section main .inner .inner2-wrap .inner-content .inner-aside .thumbnail{width: 90%; height: 290px; display: block; margin: 20px auto;}
+section main .inner .inner2-wrap .inner-content .inner-aside .my-info{width: 90%; height: 120px; display: block; margin: 20px auto;}
+section main .inner .inner2-wrap .inner-content .inner-main{width:68%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-right: 10px;}
 section main .inner .inner2-wrap .inner-content .inner-main .post-list{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
 section main .inner .inner2-wrap .inner-content .inner-main .banner{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
 section main .inner .inner2-wrap .inner-content .inner-main .comment{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
-section main .inner aside {width: 20%; height: 350px; background: white; margin-right: 30px; display: block; margin-top: 20px; }
-section main .inner aside .m-player {width: 97%; height: 90%; background: #3b4258; margin: 20px auto 0;}
-section .menu-bar{display: flex; flex-direction: column; position: absolute; top :150px; right:270px; }
-section .menu-bar a{margin-bottom: 20px; background: bisque; border-radius: 10px; text-decoration: none; color: black; width: 50px; height: 30px; text-align: center; }
+section main .inner aside {width: 20%; height: 350px; background: #55b9f3; margin-right: 30px; display: block; margin-top: 20px; }
+section main .inner aside .m-player {width: 92%; height: 90%;  margin: 20px auto 0;border-radius: 45px; background: #55b9f3; box-shadow:  5px 5px 12px #4ca5d8, -5px -5px 12px #5ecdff;}
+section .menu-bar{display: flex; flex-direction: column; position: absolute; top :170px; right:280px; }
+section .menu-bar a{margin-bottom: 20px; border-radius: 24px; text-decoration: none; line-height: 30px; color: black; width: 50px; height: 32px; text-align: center; background: #fcfcfc; }
+
 
 
