@@ -3,8 +3,8 @@ header {background: #e8e5e5; height: 30px; margin: 0;}
 header .wrap{display: flex; flex-direction: row; justify-content: flex-end;}
 section {background:#e8e5e5; width: 100%; height: 100%; margin : 0; }
 section main{width: 100%; height: 650px;%; background: gray;; border-radius: 20px; padding-top : 10px;}
-section main .inner{width: 1000px; height: 640px; background: #55b9f3; margin: 0 auto;  display: flex; flex-direction: row; justify-content: space-between; border-radius: 20px; }
-section main .inner .inner2 {height: 89%; width: 70%;  margin-left: 25px; display: block; margin-top: 40px; border-radius: 20px;background: #55b9f3; box-shadow:  5px 5px 12px #4ca5d8, -5px -5px 12px #5ecdff;}
+section main .inner{width: 1000px; height: 640px;  margin: 0 auto;  display: flex; flex-direction: row; justify-content: space-between; border-radius: 20px; background:  #EBF3FA;}
+section main .inner .inner2 {height: 89%; width: 70%;  margin-left: 25px; display: block; margin-top: 40px; border-radius: 20px; background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%);box-shadow:  7px 7px 14px #cdd0d3,-7px -7px 14px #ffffff;}
 section main .inner .inner2-wrap {width : 96%; height: 97%; background: #d2d2d2; margin-left: 15px; margin-top: 10px; border-radius: 10px;}
 section main .inner .inner2-wrap .inner-header{ width: 95%; height: 40px; background: transparent; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-between;}
 section main .inner .inner2-wrap .inner-header .today{padding: 24px; margin-left: 16px; font-size: 11px; font-weight: bold; display: flex;}
@@ -19,8 +19,14 @@ section main .inner .inner2-wrap .inner-content .inner-main{width:68%; height: 4
 section main .inner .inner2-wrap .inner-content .inner-main .post-list{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
 section main .inner .inner2-wrap .inner-content .inner-main .banner{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
 section main .inner .inner2-wrap .inner-content .inner-main .comment{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
-section main .inner aside {width: 20%; height: 350px; background: #55b9f3; margin-right: 30px; display: block; margin-top: 20px; }
-section main .inner aside .m-player {width: 92%; height: 90%;  margin: 20px auto 0;border-radius: 45px; background: #55b9f3; box-shadow:  5px 5px 12px #4ca5d8, -5px -5px 12px #5ecdff;}
+section main .inner aside {width: 20%; height: 350px;  background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%); margin-right: 30px; display: block; margin-top: 20px; }
+section main .inner aside .m-player {width: 92%; height: 90%;  margin: 20px auto 0; border-radius: 30px; background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%);box-shadow:  7px 7px 14px #cdd0d3,-7px -7px 14px #ffffff; display: flex; flex-direction: column; justify-content: space-between;}
+section main .inner aside .m-player .circle{width: 160px; height: 100px; background: #E3EDF7;
+    box-shadow: -12px -10px 56px #FFFFFF, 16px 15px 48px rgba(136, 165, 191, 0.58);
+    border-radius: 40px; margin: 0 auto;}
+section main .inner aside .m-player .btn{display: flex; flex-direction: row; justify-content: space-evenly; margin-bottom: 25px;}
+section main .inner aside .m-player .btn .shape{width: 40px; height: 40px; background: #E3EDF7; box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48); border-radius: 16px;}
+section main .inner aside .m-player .btn .shape .home {margin: 7px; background-image: url("../images/Rectangle 9.png"); width: 26px; height: 26px;}
 section .menu-bar{display: flex; flex-direction: column; position: absolute; top :170px; right:280px; }
 section .menu-bar a{margin-bottom: 20px; border-radius: 24px; text-decoration: none; line-height: 30px; color: black; width: 50px; height: 32px; text-align: center; background: #fcfcfc; }
 
