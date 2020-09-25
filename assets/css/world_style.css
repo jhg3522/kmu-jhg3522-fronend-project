@@ -4,18 +4,18 @@ header .wrap{display: flex; flex-direction: row; justify-content: flex-end;}
 section {background:#e8e5e5; width: 100%; height: 100%; margin : 0; }
 section main{width: 100%; height: 650px;%; background: gray;; border-radius: 20px; padding-top : 10px; box-shadow:  2px 2px 44px #cdd0d3,-2px -2px 44px #ffffff;}
 section main .inner{width: 1000px; height: 640px;  margin: 0 auto;  display: flex; flex-direction: row; justify-content: space-between; border-radius: 20px; background:  #EBF3FA;}
-section main .inner .inner2 {height: 89%; width: 70%;  margin-left: 25px; display: block; margin-top: 40px; border-radius: 20px; background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%);box-shadow:  7px 7px 14px #cdd0d3,-7px -7px 14px #ffffff;}
-section main .inner .inner2-wrap {width : 96%; height: 97%; background: #d2d2d2; margin-left: 15px; margin-top: 10px; border-radius: 10px;}
+section main .inner .inner2 {height: 89%; width: 70%;  margin-left: 25px; display: block; margin-top: 40px; border-radius: 20px; background: linear-gradient(180deg, #F1F5F8 0%, #ebf3fa 0.01%, #DDE7F3 53.92%, #E6F0F9 100%);box-shadow:  7px 7px 14px #cdd0d3,-7px -7px 14px #ffffff;}
+section main .inner .inner2-wrap {width : 96%; height: 97%; background: #d2d2d2; margin-left: 15px; margin-top: 10px; border-radius: 10px; box-shadow:  1px 1px 3px #c6c5c5, -4px -4px 10px #dbecfa;}
 section main .inner .inner2-wrap .inner-header{ width: 95%; height: 40px; background: transparent; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-between;}
 section main .inner .inner2-wrap .inner-header .today{padding: 24px; margin-left: 16px; font-size: 11px; font-weight: bold; display: flex;}
 section main .inner .inner2-wrap .inner-header .today .num{color: #ff5900; margin: 0 3px}
-section main .inner .inner2-wrap .inner-header .page-name{ padding: 20px; margin-right: 245px; font-weight: bold; color: #3185ff; font-size: 19px; text-shadow: #8e8e8e 1px 1px 2px, #ffffff -1px -1px 2px;}
+section main .inner .inner2-wrap .inner-header .page-name{ padding: 20px; margin-right: 240px; font-weight: bold; color: #3185ff; font-size: 19px; text-shadow: #8e8e8e 1px 1px 2px, #ffffff -1px -1px 2px;}
 section main .inner .inner2-wrap .inner-content{display: flex; flex-direction: row; justify-content: space-between; width: 100%; height: 100%; margin: 10px auto 0;}
-section main .inner .inner2-wrap .inner-content .shadow{border-radius: 17px; background: #fcfcfc; box-shadow:  6px 6px 3px #e0e0e0, -6px -6px 3px #ffffff;}
-section main .inner .inner2-wrap .inner-content .inner-aside{width: 27%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-left: 10px;}
+section main .inner .inner2-wrap .inner-content .shadow{border-radius: 17px; background: #fcfcfc; box-shadow:  10px 10px 14px #d5d5d5, -10px -10px 14px #f6f6f6;}
+section main .inner .inner2-wrap .inner-content .inner-aside{width: 27%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-left: 10px; box-shadow:  2px 2px 7px #666666, -2px -2px 7px #d0cfcf;}
 section main .inner .inner2-wrap .inner-content .inner-aside .thumbnail{width: 90%; height: 290px; display: block; margin: 20px auto;}
 section main .inner .inner2-wrap .inner-content .inner-aside .my-info{width: 90%; height: 120px; display: block; margin: 20px auto;}
-section main .inner .inner2-wrap .inner-content .inner-main{width:68%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-right: 10px;}
+section main .inner .inner2-wrap .inner-content .inner-main{width:68%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-right: 10px; box-shadow:  2px 2px 7px #666666, -2px -2px 7px #d0cfcf;}
 section main .inner .inner2-wrap .inner-content .inner-main .post-list{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
 section main .inner .inner2-wrap .inner-content .inner-main .banner{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
 section main .inner .inner2-wrap .inner-content .inner-main .comment{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
