@@ -20,20 +20,23 @@ section main .inner .wrap .content .aside .thumbnail .text p{margin: 0; text-sha
 section main .inner .wrap .content .aside .thumbnail .text .blue{color: #5050f1; font-size: 10px;text-shadow: #8989f1 1px 1px 2px, #ffffff -1px -1px 2px;}
 section main .inner .wrap .content .aside .thumbnail .text .red{color: #ff0000; font-size: 10px;text-shadow: #f66060 1px 1px 2px, #ffffff -1px -1px 2px;}
 section main .inner .wrap .content .aside .my-info{width: 80%; height: 90px; display: flex; flex-direction: column; margin: 20px auto; }
-section main .inner .wrap .content .aside .my-info .footer{display: flex; flex-direction: row; font-size: 10px; justify-content: left; margin-top: 25px; margin-left: 15px;}
+section main .inner .wrap .content .aside .my-info .footer{display: flex; flex-direction: row; font-size: 10px; justify-content: left; margin-top: 25px; margin-left: 10px;}
 section main .inner .wrap .content .aside .my-info .footer .name{color: #3185ff; font-size: 11px; text-shadow: #83b3f8 1px 1px 1px, #ffffff -1px -1px 1px;}
 section main .inner .wrap .content .aside .my-info .footer .gender{width: 12px; height: 12px; background-size: cover; background-position: center; background-image: url("../images/male.png");}
 section main .inner .wrap .content .aside .my-info .footer .birth{}
-section main .inner .wrap .content .aside .my-info .sns-wrap{}
+section main .inner .wrap .content .aside .my-info .sns-wrap {display: flex; flex-direction: row; margin: 5px 2px 0;  justify-content: space-between;}
+section main .inner .wrap .content .aside .my-info .sns-wrap .sns{width: 28px; height: 28px; background: #fbfcff; box-shadow: -2px -2px 1px #FFFFFF, 2px 2px 1px rgba(212, 234, 255, 0.48); border-radius: 12px;}
+section main .inner .wrap .content .aside .my-info .sns-wrap .youtube{ background-image: url("../images/youtube.png"); background-size: 20px; background-position: center; background-repeat: no-repeat;}
+section main .inner .wrap .content .aside .my-info .sns-wrap .insta{ background-image: url("../images/insta.png"); background-size: 20px; background-position: center; background-repeat: no-repeat;}
+section main .inner .wrap .content .aside .my-info .sns-wrap .fb{ background-image: url("../images/fb.png"); background-size: 20px; background-position: center; background-repeat: no-repeat;}
+section main .inner .wrap .content .aside .my-info .sns-wrap .git { background-image: url("../images/github.png"); background-size: 20px; background-position: center; background-repeat: no-repeat;}
 section main .inner .wrap .content .main{width:68%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-right: 10px; box-shadow:  2px 2px 7px #666666, -2px -2px 7px #d0cfcf;}
 section main .inner .wrap .content .main .post-list{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
 section main .inner .wrap .content .main .banner{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
 section main .inner .wrap .content .main .comment{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
 section main .inner aside {width: 20%; height: 350px;  background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%); margin-right: 30px; display: block; margin-top: 20px; }
 section main .inner aside .m-player {width: 92%; height: 90%;  margin: 20px auto 0; border-radius: 30px; background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%);box-shadow:  7px 7px 14px #cdd0d3,-7px -7px 14px #ffffff; display: flex; flex-direction: column; justify-content: space-between;}
-section main .inner aside .m-player .circle{width: 160px; height: 100px; background: #E3EDF7;
-    box-shadow: -12px -10px 56px #FFFFFF, 16px 15px 48px rgba(136, 165, 191, 0.58);
-    border-radius: 40px; margin: 0 auto;}
+section main .inner aside .m-player .circle{width: 160px; height: 100px; background: #E3EDF7;box-shadow: -12px -10px 56px #FFFFFF, 16px 15px 48px rgba(136, 165, 191, 0.58);border-radius: 40px; margin: 0 auto;}
 section main .inner aside .m-player .btn{display: flex; flex-direction: row; justify-content: space-evenly; margin-bottom: 25px;}
 section main .inner aside .m-player .btn .shape{width: 40px; height: 40px; background: #E3EDF7; box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48); border-radius: 16px;}
 section .menu-bar{display: flex; flex-direction: column; position: absolute; top :170px; right:280px; }
