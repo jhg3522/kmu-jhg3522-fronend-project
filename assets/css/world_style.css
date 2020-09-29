@@ -11,7 +11,6 @@ section main .inner .wrap .header .today{padding: 24px; margin-left: 16px; font-
 section main .inner .wrap .header .today .num{color: #ff5900; margin: 0 3px; text-shadow: #8e8e8e 1px 1px 2px, #ffffff -1px -1px 2px;}
 section main .inner .wrap .header .page-name{ padding: 20px; margin-right: 240px; font-weight: bold; color: #3185ff; font-size: 19px; text-shadow: #8e8e8e 1px 1px 2px, #ffffff -1px -1px 2px;}
 section main .inner .wrap .content{display: flex; flex-direction: row; justify-content: space-between; width: 100%; height: 100%; margin: 10px auto 0;}
-section main .inner .wrap .content .shadow{border-radius: 17px; background: #fcfcfc; box-shadow:  10px 10px 14px #d5d5d5, -10px -10px 14px #f6f6f6;}
 section main .inner .wrap .content .aside{width: 27%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-left: 10px; box-shadow:  2px 2px 7px #666666, -2px -2px 7px #d0cfcf;}
 section main .inner .wrap .content .aside .thumbnail{width: 80%; height: 320px; display: block; margin: 20px auto;}
 section main .inner .wrap .content .aside .thumbnail .img{width: 100%; height: 220px; border-radius: 10px; background-image: url("../images/KakaoTalk_20200914_182659266_10.jpg"); background-position: center; background-size: cover; margin: 0 auto;}
@@ -30,17 +29,23 @@ section main .inner .wrap .content .aside .my-info .sns-wrap .youtube{ backgroun
 section main .inner .wrap .content .aside .my-info .sns-wrap .insta{ background-image: url("../images/insta.png"); background-size: 20px; background-position: center; background-repeat: no-repeat;}
 section main .inner .wrap .content .aside .my-info .sns-wrap .fb{ background-image: url("../images/fb.png"); background-size: 20px; background-position: center; background-repeat: no-repeat;}
 section main .inner .wrap .content .aside .my-info .sns-wrap .git { background-image: url("../images/github.png"); background-size: 20px; background-position: center; background-repeat: no-repeat;}
-section main .inner .wrap .content .main{width:68%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-right: 10px; box-shadow:  2px 2px 7px #666666, -2px -2px 7px #d0cfcf;}
-section main .inner .wrap .content .main .post-list{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
-section main .inner .wrap .content .main .banner{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
-section main .inner .wrap .content .main .comment{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
+section main .inner .wrap .content .main{position: relative; z-index: 2; width:68%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-right: 10px; box-shadow:  2px 2px 7px #666666, -2px -2px 7px #d0cfcf;}
+section main .inner .wrap .content .main .shadow{border-radius: 17px; background: #fcfcfc; box-shadow:  5px 5px 7px #d5d5d5, -5px -5px 7px #f6f6f6;}
+section main .inner .wrap .content .main .main-wrap{width:91%; height: 460px; overflow: auto; background: white; margin: 10px; border-radius: 20px; z-index: 20;}
+section main .inner .wrap .content .main .main-wrap .post-list{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
+section main .inner .wrap .content .main .main-wrap .banner{width: 90%; height: 240px; background: white; display: block; margin: 12px 0 0 15px;}
+section main .inner .wrap .content .main .main-wrap .comment{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
+section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar {width: 11px; height: 40px;}
+section main .inner .wrap .content .main .main-warp::-webkit-scrollbar-track {background-color: transparent;}
+section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar-thumb {border-radius: 25px;    background-color: #b3b3b3;}
+section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar-button { display: none;}
 section main .inner aside {width: 20%; height: 350px;  background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%); margin-right: 30px; display: block; margin-top: 20px; }
 section main .inner aside .m-player {width: 92%; height: 90%;  margin: 20px auto 0; border-radius: 30px; background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%);box-shadow:  7px 7px 14px #cdd0d3,-7px -7px 14px #ffffff; display: flex; flex-direction: column; justify-content: space-between;}
 section main .inner aside .m-player .circle{width: 160px; height: 100px; background: #E3EDF7;box-shadow: -12px -10px 56px #FFFFFF, 16px 15px 48px rgba(136, 165, 191, 0.58);border-radius: 40px; margin: 0 auto;}
 section main .inner aside .m-player .btn{display: flex; flex-direction: row; justify-content: space-evenly; margin-bottom: 25px;}
 section main .inner aside .m-player .btn .shape{width: 40px; height: 40px; background: #E3EDF7; box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48); border-radius: 16px;}
-section .menu-bar{display: flex; flex-direction: column; position: absolute; top :170px; right:280px; }
-section .menu-bar a{margin-bottom: 20px; border-radius: 24px; text-decoration: none; line-height: 30px; color: black; width: 50px; height: 32px; text-align: center; background: #fcfcfc; text-shadow: #787878 1px 1px 2px, #e2e2e2 -1px -1px 2px;}
-
+section .menu-bar{display: flex; flex-direction: column; position: absolute; top :170px; right:280px;}
+section .menu-bar a{margin-bottom: 20px;  text-decoration: none; line-height: 30px; color: black; width: 50px; height: 32px; text-align: center; text-shadow: #787878 1px 1px 2px, #e2e2e2 -1px -1px 2px;background: #E3EDF7; box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48); border-radius: 16px;}
+section .menu-bar a:first-child{background: #fcfcfc; box-shadow: none;  border-radius: 16px; z-index: 3;}
 
 
