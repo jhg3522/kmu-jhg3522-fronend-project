@@ -71,8 +71,11 @@
 
                                 </div>
                                 <div class="banner shadow">
-                                    <div class="slider">
-                                        <div class="img1"></div>
+                                    <div id="slider">
+                                        <div class="img img1"></div>
+                                        <div class="img img2"></div>
+                                        <div class="img img3"></div>
+                                        <div class="img img4"></div>
                                     </div>
                                 </div>
                                 <div class="comment shadow"></div>
@@ -102,5 +105,32 @@
         <a href="#">123</a>
     </div>
 </section>
+<script>
+    let slider = document.querySelector("#slider");
+    let sliderCnt=0;
+    console.log(slider.children);
+    function showSlider(num){
+        for (let i=0; i<slider.children.length;i++){
+            if(i == num)
+            {
+                slider.children[i].style.visibility ='visible';
+                slider.children[i].style.opacity = 1;
+            }
+            else {
+                slider.children[i].style.visibility = 'hidden';
+                slider.children[i].style.opacity = 0;
+            }
+        }
+    }
+    setInterval(function(){
+        if(sliderCnt === slider.children.length)
+        {
+            sliderCnt =0;
+        }
+        showSlider(sliderCnt);
+        sliderCnt++;
+    }, 2000);
+</script>
+
 </body>
 </html>
