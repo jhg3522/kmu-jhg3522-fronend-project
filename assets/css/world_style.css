@@ -9,7 +9,7 @@ section main .inner .wrap {width : 96%; height: 97%; background: #d2d2d2; margin
 section main .inner .wrap .header{ width: 95%; height: 40px; background: transparent; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-between;}
 section main .inner .wrap .header .today{padding: 24px; margin-left: 16px; font-size: 11px; font-weight: bold; display: flex; text-shadow: #8e8e8e 1px 1px 2px, #ffffff -1px -1px 2px;}
 section main .inner .wrap .header .today .num{color: #ff5900; margin: 0 3px; text-shadow: #8e8e8e 1px 1px 2px, #ffffff -1px -1px 2px;}
-section main .inner .wrap .header .page-name{ padding: 20px; margin-right: 240px; font-weight: bold; color: #3185ff; font-size: 19px; text-shadow: #8e8e8e 1px 1px 2px, #ffffff -1px -1px 2px;}
+section main .inner .wrap .header .page-name{ padding: 20px; margin-right: 240px; font-weight: bold; color: #3185ff; font-size: 19px; text-shadow: #ffffff 1px 1px 2px, #8e8e8e -1px -1px 2px;}
 section main .inner .wrap .content{display: flex; flex-direction: row; justify-content: space-between; width: 100%; height: 100%; margin: 10px auto 0;}
 section main .inner .wrap .content .aside{width: 27%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-left: 10px; box-shadow:  2px 2px 7px #666666, -2px -2px 7px #d0cfcf;}
 section main .inner .wrap .content .aside .thumbnail{width: 80%; height: 320px; display: block; margin: 20px auto;}
@@ -18,37 +18,46 @@ section main .inner .wrap .content .aside .thumbnail .text { font-size: 7px; fon
 section main .inner .wrap .content .aside .thumbnail .text p{margin: 0; text-shadow: #8e8e8e 1px 1px 2px, #ffffff -1px -1px 2px;}
 section main .inner .wrap .content .aside .thumbnail .text .blue{color: #5050f1; font-size: 10px;text-shadow: #8989f1 1px 1px 2px, #ffffff -1px -1px 2px;}
 section main .inner .wrap .content .aside .thumbnail .text .red{color: #ff0000; font-size: 10px;text-shadow: #f66060 1px 1px 2px, #ffffff -1px -1px 2px;}
-section main .inner .wrap .content .aside .my-info{width: 80%; height: 90px; display: flex; flex-direction: column; margin: 20px auto; }
-section main .inner .wrap .content .aside .my-info .footer{display: flex; flex-direction: row; font-size: 10px; justify-content: left; margin-top: 25px; margin-left: 10px;}
-section main .inner .wrap .content .aside .my-info .footer .name{color: #3185ff; font-size: 11px; text-shadow: #83b3f8 1px 1px 1px, #ffffff -1px -1px 1px;}
-section main .inner .wrap .content .aside .my-info .footer .gender{width: 12px; height: 12px; background-size: cover; background-position: center; background-image: url("../images/male.png");}
+section main .inner .wrap .content .aside .my-info{width: 80%; height: 90px; display: flex; flex-direction: column; margin: 20px auto;}
+section main .inner .wrap .content .aside .my-info .footer{display: flex; flex-direction: row; font-size: 10px; justify-content: left; margin-top: 16px;}
+section main .inner .wrap .content .aside .my-info .footer .name{color: #3185ff; font-size: 11px; text-shadow: #83b3f8 1px 1px 1px, #ffffff -1px -1px 1px; margin-left: 5px;}
+section main .inner .wrap .content .aside .my-info .footer .gender{width: 12px; height: 12px; background-size: cover; background-position: center; background-image: url("../images/male.png"); margin: 0 2px;}
 section main .inner .wrap .content .aside .my-info .footer .birth{}
-section main .inner .wrap .content .aside .my-info .sns-wrap {display: flex; flex-direction: row; margin: 5px 2px 0;  justify-content: space-between;}
-section main .inner .wrap .content .aside .my-info .sns-wrap .sns{width: 28px; height: 28px; background: #fbfcff; box-shadow: -2px -2px 1px #FFFFFF, 2px 2px 1px rgba(212, 234, 255, 0.48); border-radius: 12px;}
+section main .inner .wrap .content .aside .my-info .sns-wrap {display: flex; flex-direction: row; margin: 12px 5px 0;  justify-content: space-between;}
+section main .inner .wrap .content .aside .my-info .sns-wrap .sns{width: 28px; height: 28px; background: #fbfcff; box-shadow: -2px -2px 1px #FFFFFF, 2px 2px 1px rgba(205, 205, 205, 0.48); border-radius: 12px;}
 section main .inner .wrap .content .aside .my-info .sns-wrap .youtube{ background-image: url("../images/youtube.png"); background-size: 20px; background-position: center; background-repeat: no-repeat;}
 section main .inner .wrap .content .aside .my-info .sns-wrap .insta{ background-image: url("../images/insta.png"); background-size: 20px; background-position: center; background-repeat: no-repeat;}
 section main .inner .wrap .content .aside .my-info .sns-wrap .fb{ background-image: url("../images/fb.png"); background-size: 20px; background-position: center; background-repeat: no-repeat;}
 section main .inner .wrap .content .aside .my-info .sns-wrap .git { background-image: url("../images/github.png"); background-size: 20px; background-position: center; background-repeat: no-repeat;}
 section main .inner .wrap .content .main{position: relative; z-index: 2; width:68%; height: 480px; border-radius: 24px; background: #fcfcfc; margin-right: 10px; box-shadow:  2px 2px 7px #666666, -2px -2px 7px #d0cfcf;}
-section main .inner .wrap .content .main .shadow{border-radius: 17px; background: #fcfcfc; box-shadow:  5px 5px 7px #d5d5d5, -5px -5px 7px #f6f6f6;}
+section main .inner .wrap .content .shadow{border-radius: 17px; background: #fcfcfc; box-shadow:  5px 5px 7px #d5d5d5, -5px -5px 7px #f6f6f6;}
 section main .inner .wrap .content .main .main-wrap{width:91%; height: 460px; overflow: auto; background: white; margin: 10px; border-radius: 20px; z-index: 20;}
-section main .inner .wrap .content .main .main-wrap .post-list{width: 90%; height: 30%; background: white; margin: 12px 0 0 15px; display: flex; flex-direction: row; justify-content: space-evenly; }
-section main .inner .wrap .content .main .main-wrap .post-list .lately {display: flex; flex-direction: column;}
-section main .inner .wrap .content .main .main-wrap .post-list .list  {display: grid; grid-template-columns: repeat(2,1fr)}
+section main .inner .wrap .content .main .main-wrap .post-list{width: 90%; height: 30%; background: white; margin: 12px 0 0 15px;  }
+section main .inner .wrap .content .main .main-wrap .post-list .list-name h5{margin : 0 0 0 7px; padding: 5px; font-weight: bold; color: #3185ff; font-size: 16px; text-shadow: #ffffff 1px 1px 2px, #cee1fc -1px -1px 2px; }
+section main .inner .wrap .content .main .main-wrap .post-list .post-wrap{display: flex; flex-direction: row; justify-content: space-evenly;}
+section main .inner .wrap .content .main .main-wrap .post-list .post-wrap a{text-decoration: none; color: black; text-shadow: #ffffff 1px 1px 1px, #8e8e8e -1px -1px 1px; margin-left: 4px;}
+section main .inner .wrap .content .main .main-wrap .post-list .post-wrap .lately {display: flex; flex-direction: column; width: 46%;  border-top-style:  dotted; border-top-width: 2px; border-top-color: #bdd8f1;}
+section main .inner .wrap .content .main .main-wrap .post-list .post-wrap .lately a{ font-size: 13px; line-height: 21px; }
+section main .inner .wrap .content .main .main-wrap .post-list .post-wrap .list  {display: grid; grid-template-columns: repeat(2,1fr); grid-auto-rows: 20px; width: 46%; border-top-style:  dotted; border-top-width: 2px; border-top-color: #bdd8f1;}
+section main .inner .wrap .content .main .main-wrap .post-list .post-wrap .list a{ font-size: 12px; font-weight: bold; border-bottom-style:dotted; border-bottom-width: 2px; border-bottom-color: #bdd8f1; padding: 2px; margin : 0 5px; }
 section main .inner .wrap .content .main .main-wrap .banner{width: 90%; height: 240px; background: white; display: block; margin: 12px 0 0 15px;}
-section main .inner .wrap .content .main .main-wrap .banner .slider{ width: 95%; height: 95%; overflow: hidden; vertical-align: center; display: block; margin: 0 auto; }
+section main .inner .wrap .content .main .main-wrap .banner .slider{ width: 100%; height: 100%; overflow: hidden; vertical-align: center; border-radius: 17px;background: #fcfcfc; box-shadow:  5px 5px 7px #d5d5d5, -5px -5px 7px #f6f6f6;}
+section main .inner .wrap .content .main .main-wrap .banner .slider .img1{background-image: url("../images/KakaoTalk_20200914_182659266.jpg"); width: 100%; height: 100%; background-size: cover; background-position: center;}
+section main .inner .wrap .content .main .main-wrap .banner .slider .img2{background-image: url("../images/KakaoTalk_20200914_182659266.jpg"); width: 100%; height: 100%; background-size: cover; background-position: center;}
+section main .inner .wrap .content .main .main-wrap .banner .slider .img3{background-image: url("../images/KakaoTalk_20200914_182659266.jpg"); width: 100%; height: 100%; background-size: cover; background-position: center;}
+section main .inner .wrap .content .main .main-wrap .banner .slider .img4{background-image: url("../images/KakaoTalk_20200914_182659266.jpg"); width: 100%; height: 100%; background-size: cover; background-position: center;}
 section main .inner .wrap .content .main .main-wrap .comment{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
 section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar {width: 11px; height: 40px;}
 section main .inner .wrap .content .main .main-warp::-webkit-scrollbar-track {background-color: transparent;}
 section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar-thumb {border-radius: 25px;    background-color: #b3b3b3;}
 section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar-button { display: none;}
 section main .inner aside {width: 20%; height: 350px;  background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%); margin-right: 30px; display: block; margin-top: 20px; }
-section main .inner aside .m-player {width: 92%; height: 90%;  margin: 20px auto 0; border-radius: 30px; background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%);box-shadow:  7px 7px 14px #cdd0d3,-7px -7px 14px #ffffff; display: flex; flex-direction: column; justify-content: space-between;}
+section main .inner aside .m-player {width: 92%; height: 90%;  margin: 20px auto 0; border-radius: 30px; background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #e6f0f9 100%);box-shadow:  7px 7px 14px #cdd0d3,-7px -7px 14px #ffffff; display: flex; flex-direction: column; justify-content: space-between;}
 section main .inner aside .m-player .circle{width: 160px; height: 100px; background: #E3EDF7;box-shadow: -12px -10px 56px #FFFFFF, 16px 15px 48px rgba(136, 165, 191, 0.58);border-radius: 40px; margin: 0 auto;}
 section main .inner aside .m-player .btn{display: flex; flex-direction: row; justify-content: space-evenly; margin-bottom: 25px;}
 section main .inner aside .m-player .btn .shape{width: 40px; height: 40px; background: #E3EDF7; box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48); border-radius: 16px;}
-section .menu-bar{display: flex; flex-direction: column; position: absolute; top :170px; right:280px;}
-section .menu-bar a{margin-bottom: 20px;  text-decoration: none; line-height: 30px; color: black; width: 50px; height: 32px; text-align: center; text-shadow: #787878 1px 1px 2px, #e2e2e2 -1px -1px 2px;background: #E3EDF7; box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48); border-radius: 16px;}
-section .menu-bar a:first-child{background: #fcfcfc; box-shadow: none;  border-radius: 16px; z-index: 3;}
+section .menu-bar{display: flex; flex-direction: column; position: absolute; top :170px; right:260px;}
+section .menu-bar a{margin-bottom: 20px;  text-decoration: none; line-height: 35px; color: black; width: 60px; height: 36px; text-align: right; text-shadow: #787878 1px 1px 2px, #e2e2e2 -1px -1px 2px;background: #E3EDF7; box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48); border-radius: 8px; padding-right: 15px;}
+section .menu-bar a:first-child{background: #fcfcfc; box-shadow: none; z-index: 3;}
 
 
