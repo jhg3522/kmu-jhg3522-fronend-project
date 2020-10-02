@@ -7,7 +7,7 @@ section main .inner{width: 1000px; height: 640px;  margin: 0 auto;  display: fle
 section main .inner .inner2 {height: 89%; width: 70%;  margin-left: 25px; display: block; margin-top: 40px; border-radius: 20px; background: linear-gradient(180deg, #F1F5F8 0%, #ebf3fa 0.01%, #DDE7F3 53.92%, #E6F0F9 100%);box-shadow:  7px 7px 14px #cdd0d3,-7px -7px 14px #ffffff;}
 section main .inner .wrap {width : 96%; height: 97%; background: #d2d2d2; margin-left: 15px; margin-top: 10px; border-radius: 10px; box-shadow:  1px 1px 3px #c6c5c5, -4px -4px 10px #dbecfa;}
 section main .inner .wrap .header{ width: 95%; height: 40px; background: transparent; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-between;}
-section main .inner .wrap .header .today{padding: 24px; margin-left: 16px; font-size: 11px; font-weight: bold; display: flex; text-shadow: #8e8e8e 1px 1px 2px, #ffffff -1px -1px 2px;}
+section main .inner .wrap .header .today{padding-top: 24px; margin-left: 18px; font-size: 11px; font-weight: bold; display: flex; text-shadow: #8e8e8e 1px 1px 2px, #ffffff -1px -1px 2px;}
 section main .inner .wrap .header .today .num{color: #ff5900; margin: 0 3px; text-shadow: #8e8e8e 1px 1px 2px, #ffffff -1px -1px 2px;}
 section main .inner .wrap .header .page-name{ padding: 20px; margin-right: 240px; font-weight: bold; color: #3185ff; font-size: 19px; text-shadow: #ffffff 1px 1px 2px, #8e8e8e -1px -1px 2px;}
 section main .inner .wrap .content{display: flex; flex-direction: row; justify-content: space-between; width: 100%; height: 100%; margin: 10px auto 0;}
@@ -47,7 +47,15 @@ section main .inner .wrap .content .main .main-wrap .banner #slider .img1{backgr
 section main .inner .wrap .content .main .main-wrap .banner #slider .img2{background-image: url("../images/KakaoTalk_20200914_182659266_07.jpg");}
 section main .inner .wrap .content .main .main-wrap .banner #slider .img3{background-image: url("../images/KakaoTalk_20200914_182659266_12.jpg");}
 section main .inner .wrap .content .main .main-wrap .banner #slider .img4{background-image: url("../images/KakaoTalk_20200914_182659266_19.jpg");}
-section main .inner .wrap .content .main .main-wrap .comment{width: 90%; height: 30%; background: white; display: block; margin: 12px 0 0 15px;}
+section main .inner .wrap .content .main .main-wrap .comment{width: 90%; height: 30%; background: white; margin: 12px 0 0 15px; display: flex; flex-direction: column; }
+section main .inner .wrap .content .main .main-wrap .comment .comment-name{display: flex; flex-direction: row; justify-content: flex-start; background: #dedede; border-radius: 16px;}
+section main .inner .wrap .content .main .main-wrap .comment .comment-name h5{font-weight: bold; color: #3185ff; font-size: 10px; text-shadow: #ffffff 1px 1px 2px, #8e8e8e -1px -1px 2px; margin-left: 10px; margin-right: 16px;}
+section main .inner .wrap .content .main .main-wrap .comment .comment-name .input-outer{display: flex;margin-top: 6px; height: 35px; width: 240px; border-radius: 10px; box-shadow: inset 5px 5px 10px #bababa,inset -5px -5px 10px #ffffff;}
+section main .inner .wrap .content .main .main-wrap .comment .comment-name .input-comment{margin-left: 10px; width: 215px; border-radius: 10px; height: calc(100% );border: none; background-color: transparent; outline: none; font-size: 10px; letter-spacing: 1px;}
+section main .inner .wrap .content .main .main-wrap .comment .comment-name .btn{border-radius: 10px; width: 25px; height: 30px; font-size: 10px; padding: 0; margin-top: 10px; margin-left: 5px; border: none;box-shadow:  10px 10px 15px -10px #6c6c6c, -10px -10px 15px -10px #ffffff;}
+section main .inner .wrap .content .main .main-wrap .comment .comment-wrap{ margin: 0; padding: 0; width: 95%;}
+section main .inner .wrap .content .main .main-wrap .comment .comment-wrap li{border-bottom: 1px solid black;}
+section main .inner .wrap .content .main .main-wrap .comment .comment-wrap .text {font-size: 12px;}
 section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar {width: 11px; height: 40px;}
 section main .inner .wrap .content .main .main-warp::-webkit-scrollbar-track {background-color: transparent;}
 section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar-thumb {border-radius: 25px;    background-color: #b3b3b3;}
@@ -58,7 +66,7 @@ section main .inner aside .m-player .circle{width: 160px; height: 100px; backgro
 section main .inner aside .m-player .btn{display: flex; flex-direction: row; justify-content: space-evenly; margin-bottom: 25px;}
 section main .inner aside .m-player .btn .shape{width: 40px; height: 40px; background: #E3EDF7; box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48); border-radius: 16px;}
 section .menu-bar{display: flex; flex-direction: column; position: absolute; top :170px; right:260px;}
-section .menu-bar a{margin-bottom: 20px;  text-decoration: none; line-height: 35px; color: black; width: 60px; height: 36px; text-align: right; text-shadow: #787878 1px 1px 2px, #e2e2e2 -1px -1px 2px;background: #E3EDF7; box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48); border-radius: 8px; padding-right: 15px;}
+section .menu-bar a{margin-bottom: 20px;  text-decoration: none; line-height: 35px; color: black; width: 60px; height: 36px; text-align: right; text-shadow: #787878 1px 1px 2px, #e2e2e2 -1px -1px 2px;background: #E3EDF7; box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48); border-radius: 8px; padding-right: 7px; font-size: 13px; font-weight: normal;}
 section .menu-bar a:first-child{background: #fcfcfc; box-shadow: none; z-index: 3;}
 
 
