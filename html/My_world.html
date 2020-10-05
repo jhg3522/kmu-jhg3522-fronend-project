@@ -108,21 +108,21 @@
                     </div>
                     <div class="bar"></div>
                     <div class="btn-wrapper">
-                        <div class="btn">
-                            <div class="inner-wrapper">
-                                <i class="material-icons-round">play_arrow</i>
-                            </div>
-                        </div>
-                        <div class="btn">
+                        <button class="btn" onclick="player.pauseVideo()">
                             <div class="inner-wrapper">
                                 <i class="material-icons-round">pause</i>
                             </div>
-                        </div>
-                        <div class="btn">
+                        </button>
+                        <button class="btn"onclick="player.playVideo()">
+                            <div class="inner-wrapper">
+                                <i class="material-icons-round">play_arrow</i>
+                            </div>
+                        </button>
+                        <button class="btn"onclick="player.pauseVideo()">
                             <div class="inner-wrapper">
                                 <i class="material-icons-round">skip_next</i>
                             </div>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </aside>
@@ -179,8 +179,12 @@
             playerVars: {'autoplay': 1, 'controls' : 0}
         });
     }
-    const btns = document.querySelectorAll('.btn');
     
+    const btns = document.querySelectorAll('.btn');
+
+    for(let btn of btns){
+        btn.onclick = () => btn.classList.toggle('active');
+    }
 
 </script>
 
