@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mini_Homepage</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../assets/css/world_style.css">
 </head>
 <body>
@@ -108,18 +108,20 @@
                     </div>
                     <div class="bar"></div>
                     <div class="btn-wrapper">
-                        <div class="shape">
-                            <div class="btn">
-                                <div class="inner-wrapper">
-                                    <i class="material-icons">home</i>
-                                </div>
+                        <div class="btn">
+                            <div class="inner-wrapper">
+                                <i class="material-icons-round">play_arrow</i>
                             </div>
                         </div>
-                        <div class="shape">
-                            <button class="btn_play" onclick="player.playVideo()"></button>
+                        <div class="btn">
+                            <div class="inner-wrapper">
+                                <i class="material-icons-round">pause</i>
+                            </div>
                         </div>
-                        <div class="shape">
-                            <button class="btn_pause" onclick="player.pauseVideo()"></button>
+                        <div class="btn">
+                            <div class="inner-wrapper">
+                                <i class="material-icons-round">skip_next</i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -171,12 +173,15 @@
     let player;
     function onYouTubePlayerAPIReady() {
         player = new YT.Player('yt-player', {
-            height: '100',
+            height: '130',
             width: '160',
             videoId: 'iSwxR-eO0QM',
             playerVars: {'autoplay': 1, 'controls' : 0}
         });
     }
+    const btns = document.querySelectorAll('.btn');
+    
+
 </script>
 
 </body>

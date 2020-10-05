@@ -60,13 +60,16 @@ section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar {width: 1
 section main .inner .wrap .content .main .main-warp::-webkit-scrollbar-track {background-color: transparent;}
 section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar-thumb {border-radius: 25px;    background-color: #b3b3b3;}
 section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar-button { display: none;}
-section main .inner aside {width: 20%; height: 350px;  background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%); margin-right: 30px; display: block; margin-top: 20px; }
-section main .inner aside .m-player {width: 92%; height: 90%;  margin: 20px auto 0; border-radius: 30px; background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #e6f0f9 100%);box-shadow:  7px 7px 14px #cdd0d3,-7px -7px 14px #ffffff; display: flex; flex-direction: column; justify-content: space-between;}
-section main .inner aside .m-player .circle{width: 160px; height: 100px; background: #E3EDF7;box-shadow: -12px -10px 56px #FFFFFF, 16px 15px 48px rgba(136, 165, 191, 0.58);border-radius: 40px; margin: 0 auto;}
+section main .inner aside {width: 20%; height: 350px;  background: linear-gradient(180deg, #F1F5F8 0%, #EBF3FA 0.01%, #DDE7F3 53.92%, #E6F0F9 100%); margin-right: 20px; display: block; margin-top: 20px; }
+section main .inner aside .m-player {width: 92%; height: 90%;  margin: 20px auto 0; border-radius: 30px; background: linear-gradient(318.32deg, #C3D1E4 0%, #DDE7F3 55%, #D4E0ED 100%); box-shadow:  7px 7px 14px #cdd0d3,-7px -7px 14px #ffffff; display: flex; flex-direction: column; justify-content: space-between;}
+section main .inner aside .m-player .circle{width: 160px; height: 130px; box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF; border-radius: 40px; margin: 0 auto;}
 section main .inner aside .m-player .circle iframe{border-radius: 20px;}
-section main .inner aside .m-player .btn-wrapper{display: flex; flex-direction: row; justify-content: space-evenly; margin-bottom: 25px;}
-section main .inner aside .m-player .btn-wrapper .shape {width: 40px; height: 40px; background: #E3EDF7; box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48); border-radius: 16px;}
-section main .inner aside .m-player .btn-wrapper .shape #start {width: 30px; height: 30px; background-image: url("../images/youtube.png"); background-size: cover; background-position: center; border: none; display: block; margin: 5px;}
+section main .inner aside .m-player .btn-wrapper{display: grid; grid-auto-flow: column; background: transparent; transform: scale(0.9); gap: 15px; margin-bottom: 40px;}
+section main .inner aside .m-player .btn-wrapper .btn{width: 47px; height: 47px; position: relative; border-radius: 18px; padding: 2px; box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #FFFFFF; -webkit-tap-highlight-color: transparent;}
+section main .inner aside .m-player .btn-wrapper .btn .inner-wrapper{width: 100%; height: 100%; border-radius: 16px; transition: all .2s ease-in-out; display: grid; place-items: center;}
+section main .inner aside .m-player .btn-wrapper .btn .inner-wrapper i{user-select: none; transition: all .2s ease-in-out; font-size: 25px; position: relative; color: rgba(201,215,230,0.8); text-shadow: 2px 2px 2px #d6e1ef99, 0 0 0 #000, 2px 2px 2px #d6e1ef00;}
+section main .inner aside .m-player .btn-wrapper .btn-active .inner-wrapper{box-shadow: inset 3px 3px 7px rgba(136,165, 191, 0.48), inset -3px -3px 7px #ffffff;}
+section main .inner aside .m-player .btn-wrapper .btn-active .inner-wrapper i{text-shadow: 1px 1px 1px #d6e1ef99, 0 0 0 #000, 1px 1px 1px #d6e1ef00;}
 section .menu-bar{display: flex; flex-direction: column; position: absolute; top :170px; right:260px;}
 section .menu-bar a{margin-bottom: 20px;  text-decoration: none; line-height: 35px; color: black; width: 60px; height: 36px; text-align: right; text-shadow: #787878 1px 1px 2px, #e2e2e2 -1px -1px 2px;background: #E3EDF7; box-shadow: -4px -2px 16px #FFFFFF, 4px 2px 16px rgba(136, 165, 191, 0.48); border-radius: 8px; padding-right: 7px; font-size: 13px; font-weight: normal;}
 section .menu-bar a:first-child{background: #fcfcfc; box-shadow: none; z-index: 3;}
