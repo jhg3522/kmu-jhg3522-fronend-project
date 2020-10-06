@@ -5,12 +5,13 @@
     <title>Mini_Homepage</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../assets/css/world_style.css">
+    <script src=“https://www.youtube.com/iframe_api”></script>
 </head>
 <body>
 <header>
     <div class="wrap">
-        <i class="material-icons md-light">face</i>
-        <i class="material-icons">home</i>
+        <i class="material-icons-round md-light">face</i>
+        <i class="material-icons-round">home</i>
     </div>
 </header>
 <section>
@@ -108,17 +109,17 @@
                     </div>
                     <div class="bar"></div>
                     <div class="btn-wrapper">
-                        <button class="btn" onclick="player.pauseVideo()">
+                        <button class="btn" onclick="player.stopVideo()">
                             <div class="inner-wrapper">
                                 <i class="material-icons-round">pause</i>
                             </div>
                         </button>
-                        <button class="btn"onclick="player.playVideo()">
+                        <button class="btn" onclick="playVideo()">
                             <div class="inner-wrapper">
                                 <i class="material-icons-round">play_arrow</i>
                             </div>
                         </button>
-                        <button class="btn"onclick="player.pauseVideo()">
+                        <button class="btn" onclick="player.pauseVideo()">
                             <div class="inner-wrapper">
                                 <i class="material-icons-round">skip_next</i>
                             </div>
@@ -176,15 +177,40 @@
             height: '130',
             width: '160',
             videoId: 'iSwxR-eO0QM',
-            playerVars: {'autoplay': 1, 'controls' : 0}
+            playerVars: {
+                'autoplay': 1, // 자동재생
+                'controls': 0, // 재생컨트롤 노출여부
+                'autohide': 0, // 재생컨트롤이 자동으로 사라질지의 여부
+                'rel': 0, // 동영상 재생완료 후 유사동영상 노출여부
+                'playsinline': 1, // 현페이지에서 재생
+                'wmode': 'transparent',
+                'modestbranding' : 1,
+            },
+            events:{
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
         });
     }
+
+    function onPlayerReady(event) {
+        event.target.playVideo();//자동재생
+    }
+    let done = false;
+    function onPlayerStateChange(event) {
+        if (event.data === YT.PlayerState.PLAYING && !done) {
+            // setTimeout(stopVideo, 6000);
+            done = true; }
+    }
+    function stopVideo() { player.stopVideo(); }
+    function playVideo() { player.playVideo(); }
 
     const btns = document.querySelectorAll('.btn');
 
     for(let btn of btns){
         btn.onclick = () => btn.classList.toggle('active');
     }
+
 
 </script>
 
