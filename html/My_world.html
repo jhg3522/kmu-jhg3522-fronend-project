@@ -5,7 +5,7 @@
     <title>Mini_Homepage</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../assets/css/world_style.css">
-    <script src=“https://www.youtube.com/iframe_api”></script>
+
 </head>
 <body>
 <header>
@@ -137,7 +137,9 @@
         </div>
     </main>
 </section>
+
 <script>
+
     let slider = document.querySelector("#slider");
     let sliderCnt=0;
     console.log(slider.children);
@@ -192,7 +194,7 @@
             }
         });
     }
-
+    
     function onPlayerReady(event) {
         event.target.playVideo();//자동재생
     }
@@ -214,5 +216,23 @@
 
 </script>
 
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+<script>
+    let firebaseConfig = {
+        apiKey: "AIzaSyAvCMD3tKp-2KdA6ebnrY6gsPNmUSt4hMA",
+        authDomain: "kmu-front-end.firebaseapp.com",
+        databaseURL: "https://kmu-front-end.firebaseio.com",
+        projectId: "kmu-front-end",
+        storageBucket: "kmu-front-end.appspot.com",
+        messagingSenderId: "48258553792",
+        appId: "1:48258553792:web:03f44d1198b04bcbd91a25",
+        measurementId: "G-60187YJSSE"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    let database = firebase.database();
+    console.log(database);
+</script>
 </body>
 </html>
