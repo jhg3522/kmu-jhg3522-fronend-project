@@ -47,7 +47,7 @@ section main .inner .wrap .content .main .main-wrap .banner #slider .img1{backgr
 section main .inner .wrap .content .main .main-wrap .banner #slider .img2{background-image: url("../images/KakaoTalk_20200914_182659266_07.jpg");}
 section main .inner .wrap .content .main .main-wrap .banner #slider .img3{background-image: url("../images/KakaoTalk_20200914_182659266_12.jpg");}
 section main .inner .wrap .content .main .main-wrap .banner #slider .img4{background-image: url("../images/KakaoTalk_20200914_182659266_19.jpg");}
-section main .inner .wrap .content .main .main-wrap .comment{width: 90%; height: 30%; background: white; margin: 12px 0 0 15px; display: flex; flex-direction: column; }
+section main .inner .wrap .content .main .main-wrap .comment{width: 90%; height: 100%; background: white; margin: 12px 0 0 15px; display: flex; flex-direction: column; }
 section main .inner .wrap .content .main .main-wrap .comment .comment-name{display: flex; flex-direction: row; justify-content: flex-start; background: #dedede; border-radius: 16px;}
 section main .inner .wrap .content .main .main-wrap .comment .comment-name h5{font-weight: bold; color: #3185ff; font-size: 10px; text-shadow: #ffffff 1px 1px 2px, #8e8e8e -1px -1px 2px; margin-left: 10px; margin-right: 16px;}
 section main .inner .wrap .content .main .main-wrap .comment .comment-name .input-outer{display: flex;margin-top: 6px; height: 35px; width: 240px; border-radius: 10px; box-shadow: inset 5px 5px 10px #bababa,inset -5px -5px 10px #ffffff;}
@@ -55,7 +55,7 @@ section main .inner .wrap .content .main .main-wrap .comment .comment-name .inpu
 section main .inner .wrap .content .main .main-wrap .comment .comment-name .btn{border-radius: 10px; width: 25px; height: 30px; font-size: 10px; padding: 0; margin-top: 10px; margin-left: 5px; border: none;box-shadow:  10px 10px 15px -10px #6c6c6c, -10px -10px 15px -10px #ffffff;}
 section main .inner .wrap .content .main .main-wrap .comment .comment-wrap{ margin: 0; padding: 0; width: 95%;}
 section main .inner .wrap .content .main .main-wrap .comment .comment-wrap li{border-bottom: 1px solid black;}
-section main .inner .wrap .content .main .main-wrap .comment .comment-wrap .text {font-size: 12px;}
+section main .inner .wrap .content .main .main-wrap .comment .comment-wrap .comment-text {font-size: 12px;}
 section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar {width: 11px; height: 40px;}
 section main .inner .wrap .content .main .main-warp::-webkit-scrollbar-track {background-color: transparent;}
 section main .inner .wrap .content .main .main-wrap::-webkit-scrollbar-thumb {border-radius: 25px;    background-color: #b3b3b3;}

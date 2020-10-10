@@ -84,14 +84,14 @@
                                     <div class="comment-name">
                                         <h5>Friendly say</h5>
                                         <div class="input-outer"><label>
-                                            <input type="text"  placeholder="일촌과 나누고 싶은 이야기를 나누세요~~!" class="input-comment">
+                                            <input type="text" id="message"  placeholder="일촌과 나누고 싶은 이야기를 나누세요~~!" class="input-comment" size="40">
                                         </label></div>
-                                        <input type="submit" value="확인" class="btn">
+                                        <button type="button" onclick="savedata()" class="btn">확인</button>
                                     </div>
                                     <div class="comment-wrap">
                                         <ul>
-                                            <li>
-                                                <p class="text">코딩을 왜 해야하는지 모르겠습니다 ㅅㅂ (정현구) 2020,10,02</p>
+                                            <li class="comment-li">
+                                                <p class="comment-text"></p>
                                             </li>
                                         </ul>
                                     </div>
@@ -232,7 +232,41 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     let database = firebase.database();
-    console.log(database);
+
+    function writeComment(body,name){
+        const postComment ={
+            name,
+            body,
+        };
+
+        const newCommentkey = firebase.database().ref().child('comments').push(postComment);
+    }
+
+    function getComments(){
+        const commentRef = firebase.database().ref('/comments/').once('value',function(snapshot){
+            const commentData = Object.entries(snapshot.val());
+            let liContent = document.querySelector(".comment-li");
+
+            for(let i =0;i<commentData.length;i++){
+                const [key,body] = commentData[i];
+                liContent.innerHTML += "<li>"+body.body+""+body.name+"</li>"
+            }
+        });
+
+        return ;
+    }
+
+    const commentRef = firebase.database().ref('/comments/').on('value',function(snapshot){
+        const commentData = Object.entries(snapshot.val());
+        let liContent = document.querySelector(".comment-li");
+        liContent.innerHTML = "";
+        for(let i =0;i<commentData.length;i++){
+            const [key,body] = commentData[i];
+            liContent.innerHTML += "<li>"+body.body+""+body.name+"</li>"
+        }
+    });
+
+
 </script>
 </body>
 </html>
