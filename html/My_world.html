@@ -65,7 +65,7 @@
                                         <div class="list">
                                             <a href="#" class="post">프로필</a>
                                             <a href="#" class="post">사진첩</a>
-                                            <a href="#" class="post">게시판</a>
+                                            <a href="world_post.html" class="post">게시판</a>
                                             <a href="#" class="post">방명록</a>
                                             <a href="#" class="post">secret</a>
                                         </div>
@@ -83,13 +83,15 @@
                                 <div class="comment shadow">
                                     <div class="comment-name">
                                         <h5>Friendly say</h5>
-                                        <div class="input-outer">
-                                            <input name="body" type="text" id="body"  placeholder="댓글을 입력해주세요~~!" class="input-comment" size="40">
-                                        </div>
-                                        <div class="input-name-outer">
-                                            <input name="name" type="text" id="name" placeholder=" 이름 " class="input-comment-name" size="40">
-                                        </div>
-                                        <button type="button" onclick="validComment()" class="btn">확인</button>
+                                        <form name="commentForm">
+                                            <div class="input-outer">
+                                                <input  type="text" name="body"  placeholder="댓글을 입력해주세요~~!" class="input-comment" size="40">
+                                            </div>
+                                            <div class="input-name-outer">
+                                                <input type="text" name="name" placeholder=" 이름 " class="input-comment-name" size="40">
+                                            </div>
+                                            <button type="button" onclick="writeComment()" class="btn">확인</button>
+                                        </form>
                                     </div>
                                     <div class="comment-wrap">
                                         <ul>
@@ -132,20 +134,20 @@
             </aside>
         </div>
         <div class="menu-bar">
-            <a href="#">Home</a>
+            <a href="My_world.html">Home</a>
             <a href="#">Profile</a>
             <a href="#">Picture</a>
-            <a href="#">Board</a>
+            <a href="world_post.html">Board</a>
             <a href="#">Secret</a>
         </div>
     </main>
 </section>
-
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
 <script>
 
     let slider = document.querySelector("#slider");
     let sliderCnt=0;
-    console.log(slider.children);
     function showSlider(num){
         for (let i=0; i<slider.children.length;i++){
             if(i === num)
@@ -197,7 +199,7 @@
             }
         });
     }
-    
+
     function onPlayerReady(event) {
         event.target.playVideo();//자동재생
     }
@@ -217,11 +219,6 @@
     }
 
 
-</script>
-
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
-<script>
     let firebaseConfig = {
         apiKey: "AIzaSyAvCMD3tKp-2KdA6ebnrY6gsPNmUSt4hMA",
         authDomain: "kmu-front-end.firebaseapp.com",
@@ -236,21 +233,28 @@
     firebase.initializeApp(firebaseConfig);
     let database = firebase.database();
 
-    function writeComment(body,name){
-        const postComment ={
-            name,
+
+    function writeComment(){
+        let comment = document.commentForm;
+        let body = comment.body.value;
+        let name = comment.name.value;
+        const postComment = {
             body,
+            name,
         };
-        firebase.database().ref().child('comments').push(postComment);
+
+        if(body!=null&&name!=null){
+            firebase.database().ref().child('comments').push(postComment);
+            console.log(body,name);
+        }
+        else{
+            alert("내용을 모두 입력해라.");
+            console.log(body,name);
+        }
     }
 
-    function validComment(){
 
-
-        writeComment(body,name);
-    }
-
-    const commentRef = firebase.database().ref('/comments/').on('value',function(snapshot){
+    /*const commentRef = firebase.database().ref('/comments/').on('value',function(snapshot){
         const commentData = Object.entries(snapshot.val());
         let liContent = document.querySelector(".comment-li");
         liContent.innerHTML = "";
@@ -258,8 +262,7 @@
             const [key,body] = commentData[i];
             liContent.innerHTML += "<li>"+body.body+""+body.name+"</li>"
         }
-    });
-
+    });*/
 
 </script>
 </body>

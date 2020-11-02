@@ -51,52 +51,13 @@
                         </div>
                         <div class="main">
                             <div class="main-wrap">
-                                <div class="post-list shadow">
-                                    <div class="list-name">
-                                        <h5>Updated news</h5>
+                                <div class="post-list2 shadow">
+                                    <div class="list-name2">
+                                        <h5>Board</h5>
+                                        <button class="board-btn"><p>Post</p></button>
                                     </div>
-                                    <div class="post-wrap">
-                                        <div class="lately">
-                                            <a href="#" class="lately_post">첫번째 게시물 입니다.</a>
-                                            <a href="#" class="lately_post">두번째 게시물 입니다.</a>
-                                            <a href="#" class="lately_post">세번째 게시물 입니다.</a>
-                                            <a href="#" class="lately_post">네번째 게시물 입니다.</a>
-                                        </div>
-                                        <div class="list">
-                                            <a href="#" class="post">프로필</a>
-                                            <a href="#" class="post">사진첩</a>
-                                            <a href="#" class="post">게시판</a>
-                                            <a href="#" class="post">방명록</a>
-                                            <a href="#" class="post">secret</a>
-                                        </div>
-                                    </div>
+                                    <div class="post-wrap2">
 
-                                </div>
-                                <div class="banner shadow">
-                                    <div id="slider">
-                                        <div class="img img1"></div>
-                                        <div class="img img2"></div>
-                                        <div class="img img3"></div>
-                                        <div class="img img4"></div>
-                                    </div>
-                                </div>
-                                <div class="comment shadow">
-                                    <div class="comment-name">
-                                        <h5>Friendly say</h5>
-                                        <div class="input-outer">
-                                            <input name="body" type="text" id="body"  placeholder="댓글을 입력해주세요~~!" class="input-comment" size="40">
-                                        </div>
-                                        <div class="input-name-outer">
-                                            <input name="name" type="text" id="name" placeholder=" 이름 " class="input-comment-name" size="40">
-                                        </div>
-                                        <button type="button" onclick="validComment()" class="btn">확인</button>
-                                    </div>
-                                    <div class="comment-wrap">
-                                        <ul>
-                                            <li class="comment-li">
-                                                <p class="comment-text"></p>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +73,7 @@
                     </div>
                     <div class="bar"></div>
                     <div class="btn-wrapper">
-                        <button class="btn" onclick="player.stopVideo()">
+                        <button class="btn" onclick="stopVideo()">
                             <div class="inner-wrapper">
                                 <i class="material-icons-round">pause</i>
                             </div>
@@ -131,42 +92,17 @@
                 </div>
             </aside>
         </div>
-        <div class="menu-bar">
-            <a href="#">Home</a>
+        <div class="menu-bar2">
+            <a href="My_world.html">Home</a>
             <a href="#">Profile</a>
             <a href="#">Picture</a>
-            <a href="#">Board</a>
+            <a href="world_post.html">Board</a>
             <a href="#">Secret</a>
         </div>
     </main>
 </section>
 
 <script>
-
-    let slider = document.querySelector("#slider");
-    let sliderCnt=0;
-    console.log(slider.children);
-    function showSlider(num){
-        for (let i=0; i<slider.children.length;i++){
-            if(i === num)
-            {
-                slider.children[i].style.visibility ='visible';
-                slider.children[i].style.opacity = '1';
-            }
-            else {
-                slider.children[i].style.visibility = 'hidden';
-                slider.children[i].style.opacity = '0';
-            }
-        }
-    }
-    setInterval(function(){
-        if(sliderCnt === slider.children.length)
-        {
-            sliderCnt =0;
-        }
-        showSlider(sliderCnt);
-        sliderCnt++;
-    }, 2000);
 
     // Load the IFrame Player API code asynchronously.
     let tag = document.createElement('script');
@@ -201,6 +137,7 @@
     function onPlayerReady(event) {
         event.target.playVideo();//자동재생
     }
+
     let done = false;
     function onPlayerStateChange(event) {
         if (event.data === YT.PlayerState.PLAYING && !done) {
@@ -235,30 +172,6 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     let database = firebase.database();
-
-    function writeComment(body,name){
-        const postComment ={
-            name,
-            body,
-        };
-        firebase.database().ref().child('comments').push(postComment);
-    }
-
-    function validComment(){
-
-
-        writeComment(body,name);
-    }
-
-    const commentRef = firebase.database().ref('/comments/').on('value',function(snapshot){
-        const commentData = Object.entries(snapshot.val());
-        let liContent = document.querySelector(".comment-li");
-        liContent.innerHTML = "";
-        for(let i =0;i<commentData.length;i++){
-            const [key,body] = commentData[i];
-            liContent.innerHTML += "<li>"+body.body+""+body.name+"</li>"
-        }
-    });
 
 
 </script>
