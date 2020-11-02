@@ -51,51 +51,13 @@
                         </div>
                         <div class="main">
                             <div class="main-wrap">
-                                <div class="post-list shadow">
-                                    <div class="list-name">
-                                        <h5>Updated news</h5>
+                                <div class="post-list2 shadow">
+                                    <div class="list-name2">
+                                        <h5>Board</h5>
+                                        <button class="board-btn" onclick=""><a href="world_post.html">Post</a></button>
                                     </div>
-                                    <div class="post-wrap">
-                                        <div class="lately">
-                                            <a href="#" class="lately_post">첫번째 게시물 입니다.</a>
-                                            <a href="#" class="lately_post">두번째 게시물 입니다.</a>
-                                            <a href="#" class="lately_post">세번째 게시물 입니다.</a>
-                                            <a href="#" class="lately_post">네번째 게시물 입니다.</a>
-                                        </div>
-                                        <div class="list">
-                                            <a href="#" class="post">프로필</a>
-                                            <a href="#" class="post">사진첩</a>
-                                            <a href="world_board.html" class="post">게시판</a>
-                                            <a href="#" class="post">방명록</a>
-                                            <a href="#" class="post">secret</a>
-                                        </div>
-                                    </div>
+                                    <div class="post-wrap2">
 
-                                </div>
-                                <div class="banner shadow">
-                                    <div id="slider">
-                                        <div class="img img1"></div>
-                                        <div class="img img2"></div>
-                                        <div class="img img3"></div>
-                                        <div class="img img4"></div>
-                                    </div>
-                                </div>
-                                <div class="comment shadow">
-                                    <div class="comment-name">
-                                        <h5>Friendly say</h5>
-                                        <form name="commentForm">
-                                            <div class="input-outer">
-                                                <input  type="text" name="body"  placeholder="댓글을 입력해주세요~~!" class="input-comment" size="40">
-                                            </div>
-                                            <div class="input-name-outer">
-                                                <input type="text" name="name" placeholder=" 이름 " class="input-comment-name" size="10">
-                                            </div>
-                                            <button type="button" onclick="writeComment()" class="btn">확인</button>
-                                        </form>
-                                    </div>
-                                    <div class="comment-wrap">
-                                        <ul class="comment-li">
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -111,17 +73,17 @@
                     </div>
                     <div class="bar"></div>
                     <div class="btn-wrapper">
-                        <button class="btn stop" onclick="stopVideo()">
+                        <button class="btn" onclick="stopVideo()">
                             <div class="inner-wrapper">
                                 <i class="material-icons-round">pause</i>
                             </div>
                         </button>
-                        <button class="btn start" onclick="playVideo()">
+                        <button class="btn" onclick="playVideo()">
                             <div class="inner-wrapper">
                                 <i class="material-icons-round">play_arrow</i>
                             </div>
                         </button>
-                        <button class="btn next">
+                        <button class="btn" onclick="player.pauseVideo()">
                             <div class="inner-wrapper">
                                 <i class="material-icons-round">skip_next</i>
                             </div>
@@ -130,7 +92,7 @@
                 </div>
             </aside>
         </div>
-        <div class="menu-bar">
+        <div class="menu-bar2">
             <a href="My_world.html">Home</a>
             <a href="#">Profile</a>
             <a href="#">Picture</a>
@@ -139,33 +101,8 @@
         </div>
     </main>
 </section>
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
-<script>
 
-    let slider = document.querySelector("#slider");
-    let sliderCnt=0;
-    function showSlider(num){
-        for (let i=0; i<slider.children.length;i++){
-            if(i === num)
-            {
-                slider.children[i].style.visibility ='visible';
-                slider.children[i].style.opacity = '1';
-            }
-            else {
-                slider.children[i].style.visibility = 'hidden';
-                slider.children[i].style.opacity = '0';
-            }
-        }
-    }
-    setInterval(function(){
-        if(sliderCnt === slider.children.length)
-        {
-            sliderCnt =0;
-        }
-        showSlider(sliderCnt);
-        sliderCnt++;
-    }, 2000);
+<script>
 
     // Load the IFrame Player API code asynchronously.
     let tag = document.createElement('script');
@@ -196,10 +133,11 @@
             }
         });
     }
-
+    
     function onPlayerReady(event) {
         event.target.playVideo();//자동재생
     }
+
     let done = false;
     function onPlayerStateChange(event) {
         if (event.data === YT.PlayerState.PLAYING && !done) {
@@ -209,6 +147,13 @@
     function stopVideo() { player.stopVideo(); }
     function playVideo() { player.playVideo(); }
 
+
+
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+<script>
     let firebaseConfig = {
         apiKey: "AIzaSyAvCMD3tKp-2KdA6ebnrY6gsPNmUSt4hMA",
         authDomain: "kmu-front-end.firebaseapp.com",
@@ -223,43 +168,6 @@
     firebase.initializeApp(firebaseConfig);
     let database = firebase.database();
 
-
-    function writeComment(){
-        let comment = document.commentForm;
-        let body = comment.body.value;
-        let name = comment.name.value;
-        const postComment = {
-            body,
-            name,
-        };
-
-        if(body !== "" && name !== ""){
-            firebase.database().ref().child('comments').push(postComment);
-            window.location.reload();
-            console.log(body,name);
-            cleanInput();
-        }
-        else{
-            alert("내용을 모두 입력해라.");
-            console.log(body,name);
-        }
-    }
-    function cleanInput(){
-        let body = document.getElementsByClassName('input-comment');
-        let name = document.getElementsByClassName('input-comment-name');
-        body.value = '';
-        name.value = '';
-    }
-
-    const commentRef = firebase.database().ref('/comments/').on('value',function(snapshot){
-        const commentData = Object.entries(snapshot.val());
-        let liContent = document.querySelector(".comment-li");
-        liContent.innerHTML = "";
-        for(let i =0;i<commentData.length;i++){
-            const [key,body] = commentData[i];
-            liContent.innerHTML += "<li><h5>"+body.body+"<b>이름 :"+body.name+"</b></h5>"+"</li>"
-        }
-    });
 
 </script>
 </body>

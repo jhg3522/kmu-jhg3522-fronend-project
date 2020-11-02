@@ -54,10 +54,13 @@
                                 <div class="post-list2 shadow">
                                     <div class="list-name2">
                                         <h5>Board</h5>
-                                        <button class="board-btn"><p>Post</p></button>
+                                        <button class="board-btn" onclick="post()"><a>Post</a></button>
                                     </div>
                                     <div class="post-wrap2">
-
+                                        <form name="boardPost">
+                                            <input type="text" name="title">
+                                            <textarea type="text" name="content"></textarea>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +99,7 @@
             <a href="My_world.html">Home</a>
             <a href="#">Profile</a>
             <a href="#">Picture</a>
-            <a href="world_post.html">Board</a>
+            <a href="world_board.html">Board</a>
             <a href="#">Secret</a>
         </div>
     </main>
@@ -147,11 +150,6 @@
     function stopVideo() { player.stopVideo(); }
     function playVideo() { player.playVideo(); }
 
-    const btns = document.querySelectorAll('.btn');
-
-    for(let btn of btns){
-        btn.onclick = () => btn.classList.toggle('active');
-    }
 
 
 </script>
@@ -173,6 +171,24 @@
     firebase.initializeApp(firebaseConfig);
     let database = firebase.database();
 
+    function post(){
+        let post = document.boardPost;
+        let title = post.title.value;
+        let content = post.content.value;
+        const postBoard = {
+            title,
+            content,
+        };
+        if(title !== "" && content !== ""){
+            firebase.database().ref().child('Board').push(postBoard);
+            console.log(title,content);
+            history.back();
+        }
+        else{
+            alert("내용을 모두 입력해라.");
+            console.log(title,content);
+        }
+    }
 
 </script>
 </body>
