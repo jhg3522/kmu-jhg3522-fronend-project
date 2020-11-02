@@ -56,12 +56,9 @@
                                         <h5>Updated news</h5>
                                     </div>
                                     <div class="post-wrap">
-                                        <div class="lately">
-                                            <a href="#" class="lately_post">첫번째 게시물 입니다.</a>
-                                            <a href="#" class="lately_post">두번째 게시물 입니다.</a>
-                                            <a href="#" class="lately_post">세번째 게시물 입니다.</a>
-                                            <a href="#" class="lately_post">네번째 게시물 입니다.</a>
-                                        </div>
+                                        <ul class="lately">
+
+                                        </ul>
                                         <div class="list">
                                             <a href="#" class="post">프로필</a>
                                             <a href="#" class="post">사진첩</a>
@@ -258,6 +255,17 @@
         for(let i =0;i<commentData.length;i++){
             const [key,body] = commentData[i];
             liContent.innerHTML += "<li><h5>"+body.body+"<b>이름 :"+body.name+"</b></h5>"+"</li>"
+        }
+    });
+
+    const BoardRef = firebase.database().ref('/Board/').on('value',function(snapshot){
+        const BoardData = Object.entries(snapshot.val());
+        let liContent = document.querySelector(".lately");
+        liContent.innerHTML = "";
+        console.log(BoardData)
+        for(let i =0;i<5;i++){
+            const [key,body] = BoardData[i];
+            liContent.innerHTML += "<li>"+body.title+"</li>"
         }
     });
 
