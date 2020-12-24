@@ -1,0 +1,357 @@
+body {
+    background-color: #e8e8e8;
+    margin : 0px;
+}
+header{
+    width : 100%;
+    height: 50px;
+    background-color: rgba(37, 72, 111, 0.9);
+    box-shadow: 0px 4px 32px rgba(78, 78, 78, 0.4);
+}
+header .header_nav{
+    display: flex;
+    max-width: 1024px;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.banner{
+    margin : 100px 0;
+    text-align: center;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px #2d4380;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+.banner img{
+    width: 128px;
+    height: 128px;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+div[class^="container"]{
+    margin :auto;
+    max-width: 1440px;
+    border-radius: 30px;
+}
+.container_profile .main{
+    max-width: 1024px;
+    margin : auto;
+    padding : 50px 0px 50px 0px;
+}
+
+.container_profile .main .profile_title h3{
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 2px #2d4380;
+    font-size: 40px;
+    margin: 0px;
+}
+.container_profile .main .profile_card{
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+
+}
+
+
+.container_profile .main .profile_card .img_box{
+    display: flex;
+    height: 400px;
+    width : 250px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all ease 1s;
+}
+
+.container_profile .main .profile_card .img_box img{
+    border-radius: 150px;
+    height: 300px;
+    width : 300px;
+    box-shadow: 0px 4px 32px rgba(0, 0, 4, 0.5);
+}
+
+.container_profile .main .profile_card .img_box h3{
+    font-family: Russo One;
+    font-size: 24px;
+}
+
+.container_profile .main .profile_card .introduce{
+    height: 400px;
+    width : 600px;
+    overflow: hidden;
+    box-shadow: 0px 4px 32px rgba(0, 0, 4, 0.5);
+    border-radius: 10px;
+    transition: all ease 1s;
+}
+.container_profile .main .profile_card .introduce:hover{
+    transform: scale( 1.1 );
+}
+.container_profile .main .profile_card .introduce .top-bar{
+    display: flex;
+    height: 30px;
+    background-color: #4A4342;
+    align-items: center;
+    text-align: center;
+}
+.container_profile .main .profile_card .introduce .top-bar span{
+    margin-left: 10px;
+    color : #4A4342;
+    font-weight: bolder;
+    height: 20px;
+    width: 20px;
+    background-color: #64635E;
+    font-size: 15px;
+    border-radius: 150px;
+}
+.container_profile .main .profile_card .introduce .top-bar p{
+    font-family: Russo One;
+    margin-left: 10px;
+    color : #64635E;
+    font-size: 15px;
+
+}
+.container_profile .main .profile_card .introduce .introduce_content{
+    display: grid;
+    background-color: #072B37;
+    height: 370px;
+    grid-template-columns: 1.8fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+.container_profile .main .profile_card .introduce .introduce_content .introduce_item1{
+    display: flex;
+    justify-content: space-between;
+}
+.container_profile .main .profile_card .introduce .introduce_content .introduce_item1 span{
+
+    font-family: "고딕체";
+    font-weight: bolder;
+    color : #74960A;
+    font-size :20px;
+    margin : 0px 20px 0px 20px;
+
+}
+.container_profile .main .profile_card .introduce .introduce_content .introduce_item2{
+    font-family: Russo One;
+    color : #1F83BA;
+    font-size :20px;
+    margin : 0px 20px 0px 20px;
+}
+
+.project{
+    margin-top: 100px;
+    background-color: #263647;
+    padding : 100px 0px 100px 0px;
+}
+.project .container_project{
+    /* background-color: #E5E5E5; */
+
+}
+.project .container_project .main_project{
+    max-width: 1024px;
+    margin : auto;
+    padding : 50px 0px 50px 0px;
+    height: 700px;
+}
+
+.project .container_project .main_project .project_title h3{
+    font-family: Russo One;
+    font-size: 50px;
+}
+
+.project .container_project .main_project .projectlist{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: space-around;
+}
+.project .container_project .main_project .projectlist .item_wrapper{
+    overflow: hidden;
+    box-shadow: 0px 4px 32px rgba(0, 0, 4, 0.5);
+    border-radius: 10px;
+    background-color: white;
+    color:black;
+    font-family: Russo One;
+    font-size: 24px;
+    transition: all ease 1s;
+}
+
+.project .container_project .main_project .projectlist .item_wrapper:hover{
+    transform: scale( 1.1 );
+}
+
+.project .container_project .main_project .projectlist .item_wrapper img{
+    height: 300px;
+    width: 300px;
+}
+.project .container_project .main_project .projectlist .item_wrapper .item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+footer {
+    display: flex;
+    background-color:#EEEEEE;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 32px;
+}
+
+@media (max-width: 1024px) and (min-width: 720px){
+    div[class^="container"] {
+        margin: auto;
+        box-shadow: none;
+        border-radius: 30px;
+    }
+
+    header .header_nav {
+        font-size: 20px;
+    }
+
+    .banner {
+        margin: 50px 0;
+    }
+
+    .banner h3 {
+        font-size: 20px;
+        margin : 0 auto;
+    }
+
+    .banner img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .container_profile .main {
+        background-color: #e8e8e8;;
+        box-shadow: none;
+        padding: 0;
+    }
+    .container_profile .main .profile_title h3 {
+        text-align: center;
+        font-size: 30px;
+        margin-left: 30px;
+    }
+
+    .container_profile .main .profile_card {
+        display: flex;
+        width: 100%;
+        height: 500px;
+    }
+
+    .container_profile .main .profile_card .img_box {
+        margin: auto;
+        height: 300px;
+    }
+
+    .container_profile .main .profile_card .img_box img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .container_profile .main .profile_card .img_box h3 {
+        font-size: 16px;
+    }
+
+    .container_profile .main .profile_card .introduce {
+        height: 280px;
+        width: 400px;
+        margin: auto;
+    }
+
+    .container_profile .main .profile_card .introduce .banner span {
+        font-size: 12px;
+    }
+
+    .container_profile .main .profile_card .introduce .banner p {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .container_profile .main .profile_card .introduce .introduce_content {
+        width: 400px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+        grid-template-columns:  200px 200px;
+    }
+
+    .container_profile .main .profile_card .introduce .introduce_content .introduce_item1 span {
+        font-size: 12px;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .container_profile .main .profile_card .introduce .introduce_content .introduce_item2 {
+        font-size: 12px;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .project {
+        margin-top: 50px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .project .container_project {
+        background-color: #263647;
+
+    }
+
+    .project .container_project .main_project {
+        margin: auto;
+        padding: 10px 0px 0px 0px;
+        height: 600px;
+    }
+
+    .project .container_project .main_project .project_title h3 {
+        font-family: Russo One;
+        color: #ffffff;
+        font-size: 30px;
+        margin: 30px 10px 20px 0px;
+        padding-left: 30px;
+    }
+
+    .project .container_project .main_project .projectlist {
+        width: 100%;
+        margin-top: 80px;
+        justify-content: space-around;
+    }
+
+    .project .container_project .main_project .projectlist .item_wrapper {
+        font-size: 24px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .project .container_project .main_project .projectlist .item_wrapper img {
+        height: 180px;
+        width: 100%;
+    }
+
+    .project .container_project .main_project .projectlist .item_wrapper .item {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .project .container_project .main_project .projectlist .item_wrapper:hover {
+        transform: scale(1.1);
+    }
+
+    footer {
+        height: 100px;
+        font-size: 16px;
+    }
+
+
+
+}
