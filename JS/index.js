@@ -47,3 +47,32 @@ $(function() {
         $(this).addClass("active");
     })
 });
+
+$(function() {
+
+    $(".right-arrow").click(function(){
+        var $curSlide = $("#photo .slide.active");
+        var $nextSlide = $curSlide.next();
+
+        $curSlide.fadeOut().removeClass("active");
+        $nextSlide.fadeIn().addClass("active");
+
+        if($nextSlide.length ===0){
+            $("#photo .slide").first().fadeIn().addClass("active");
+        }
+    });
+
+    $(".left-arrow").click(function(){
+        var $curSlide = $("#photo .slide.active");
+        var $prevSlide = $curSlide.prev();
+
+        $curSlide.fadeOut().removeClass("active");
+        $prevSlide.fadeIn().addClass("active");
+
+        if($prevSlide.length === 0){
+            $("#photo .slide").last().fadeIn().addClass("active");
+        }
+        console.log($prevSlide.length)
+    });
+
+});
