@@ -33,3 +33,17 @@ $(function() {
     }, 3000) //3초
 
 });
+
+$(function() {
+    $(".tabs-list li a").click(function(e){
+        e.preventDefault();
+    });
+
+    $(".tabs-list li").click(function(){
+        var $tabId = $(this).find("a").attr("href");
+
+        $(".tabs-list li, .tabs div.tab").removeClass("active");//클릭시 active 전체적으로 지움 일차적으로
+        $($tabId).addClass("active");
+        $(this).addClass("active");
+    })
+});

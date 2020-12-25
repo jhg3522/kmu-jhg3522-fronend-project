@@ -22,7 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3064e61e-be3e-48eb-85a2-7aa1427459b2" name="Default Changelist" comment="" />
+    <list default="true" id="3064e61e-be3e-48eb-85a2-7aa1427459b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/elice_eample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html2/elice_example.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,6 +157,7 @@
       <workItem from="1604942101827" duration="6000" />
       <workItem from="1605010836545" duration="23000" />
       <workItem from="1608795399575" duration="6351000" />
+      <workItem from="1608887708189" duration="1473000" />
     </task>
     <servers />
   </component>
