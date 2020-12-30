@@ -189,6 +189,29 @@ footer {
         height: 330px;
         width: 400px;
         margin: auto;
+        padding: 10px;
+    }
+    .friends{
+        margin-top: 60px;
+    }
+    .edit_btn{
+        margin-top: 50px;
+    }
+    .container_profile .main .profile_card .introduce .career{
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+
+    .container_profile .main .profile_card .introduce .edit_btn{
+        text-align: center;
+        padding-top : 5px;
+        margin-left: 50px;
+        width: 300px;
+        height: 28px;
+        border: solid 1px #C4C4C4;
+        border-radius: 20px;
+        background-color: #C4C4C4;
+        box-shadow: 2px 2px 2px 2px #adadad;
     }
 
     footer {
